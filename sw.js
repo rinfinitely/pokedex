@@ -3,7 +3,7 @@
    2) App shell cache: the site's own files are kept so the installed app opens instantly and still opens offline
       (stale-while-revalidate: you get the saved copy immediately and the fresh one is stored for next time).
    Supabase / Discord and every other API request is never touched. Bump SHELL / CACHE to force a refresh. */
-const CACHE = 'pokedex-images-v4';
+const CACHE = 'pokedex-images-v5';
 const SHELL = 'pokedex-shell-v20261126a';
 const IMG_PATH = /^\/(rinfinitely\/pokedex\/main\/(sprites|backgrounds)|Normal|Shiny|Backgrounds|normal|shiny|backgrounds|icons?)\//i;
 const PRECACHE = ['/', '/index.html', '/styles.css', '/theme.css', '/pgtrade.css', '/more.css', '/manifest.webmanifest', '/favicon.svg', '/favicon.png', '/icon-192.png', '/icon-512.png', '/shadow-aura.png', '/lucky-aura.png'];

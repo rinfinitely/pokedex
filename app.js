@@ -12,14 +12,14 @@ const genDir=(id,sh)=>`${SPRITE_BASE}/${sh?'shiny':'normal'}/gen%20${genOf(id)}/
    that introduced the region. Every other possible location (the species' own gen folder, its forms/ folder, the gen root) is added as a fallback, so
    a file that sits in a neighbouring folder is still found. */
 const REGION_GEN={ALOLA:7,ALOLAN:7,GALAR:8,GALARIAN:8,HISUI:8,HISUIAN:8,PALDEA:9,PALDEAN:9};
-const regionGenOf=it=>{for(const t of (it&&it.f)||[]){const m=/(ALOLA|GALAR|HISUI|PALDEA)N?/i.exec(t);if(m)return REGION_GEN[m[1].toUpperCase()]}return 0};
+const regionGenOf=it=>{for(const t of [...((it&&it.f)||[]),...(it&&it.c?[it.c]:[])]){const m=/(ALOLA|GALAR|HISUI|PALDEA)N?/i.exec(t);if(m)return REGION_GEN[m[1].toUpperCase()]}return 0};
 function spriteDirs(stem,sh){
  const id=stemId(stem),it=IMG.idx.get(stem)||parseStem(stem),cat=stemCat(it),root=`${SPRITE_BASE}/${sh?'shiny':'normal'}`,g=genOf(id),rg=regionGenOf(it);
  const d=(gen,sub)=>`${root}/gen%20${gen}/${sub?sub+'/':''}`;
  let list;
  if(cat==='mega')list=[d(g,'mega')];
  else if(cat==='gmax'||cat==='dmax')list=[d(g,'gigantamax')];
- else if(cat==='costume')list=[d(g,'costume')];
+ else if(cat==='costume')list=rg?[d(rg,'costume'),d(g,'costume')]:[d(g,'costume')];   // e.g. Galarian Zigzagoon's costume sits in gen 8/costume
  else if(cat==='form'){list=rg?[d(rg,'regional'),d(g,'regional'),d(g,'forms'),d(rg,'forms')]:[d(g,'forms'),d(g,'regional')]}
  else list=[];
  if(list.length)for(const sub of ['forms','costume','regional','mega','gigantamax'])list.push(d(g,sub));   // a file filed under a neighbouring subfolder is still found
@@ -240,7 +240,7 @@ const isListTab=()=>isBgTab()||baseTab()==='costume';
    Pokémon that already have a hand-made costume checklist (or the old single 'owned' tick) keep their old card too, so no saved data is hidden. */
 function costumeItems(){const sh=isShiny(),out=[];
  for(const it of IMG.idx.values()){if(stemCat(it)!=='costume'||(sh?!it.s:!it.n))continue;const p=pokemon[it.id-1];if(!p)continue;
-  out.push({p,form:null,entry:{key:(sh?'shiny_':'')+'cos_'+it.stem,url:'',remote:'',label:it.label||'Costume',form:'',event:'',stem:it.stem,sprite:[]}})}
+  out.push({p,form:null,entry:{key:(sh?'shiny_':'')+'cos_'+it.stem.replace(/^(pm\d+)\.c/,'$1.f'),url:'',remote:'',label:it.label||'Costume',form:'',event:'',stem:it.stem,sprite:[]}})}
  const lk=(sh?'shiny_':'')+'costumeOwned';
  for(const p of pokemon){const d=data[p.id];if(d&&((d.costumes||[]).length||d[lk]))out.push({p,form:null})}
  return out.sort((a,b)=>a.p.id-b.p.id||(a.entry?1:0)-(b.entry?1:0)||(a.entry&&b.entry?(a.entry.stem<b.entry.stem?-1:a.entry.stem>b.entry.stem?1:0):0))}
