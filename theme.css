@@ -1,0 +1,278 @@
+/* =====================================================================================================
+   theme.css — full restyle. Loaded LAST so it overrides styles.css / features.css without touching them.
+   · Everything (dex, trading, matches, community, codes, chat, modals): PGTrade-style flat dark UI
+       near-black canvas, flat charcoal cards, hairline borders, one indigo accent, pill filters, rounded 12px.
+   · Profiles, badges, clan tags, leaderboard rows: Krunker Social look
+       sharp-cornered slabs, banner header, big square avatar, [CLAN] tags, uppercase stat tiles, red accent.
+   Delete the <link> to this file in index.html to go back to the old look.
+   ===================================================================================================== */
+:root {
+  color-scheme: dark;
+  --bg: #0a0a0f;
+  --panel: #12121a;
+  --panel2: #1a1a25;
+  --line: #262633;
+  --muted: #8b8b9e;
+  --text: #f1f1f6;
+  --cyan: #8b8cff;        /* main accent (kept under the old variable name so every old rule picks it up) */
+  --accent: #6366f1;
+  --accent-soft: #6366f11f;
+  --gold: #f5c451;
+  --green: #4ade80;
+  --red: #f87171;
+  --kr: #eb5656;          /* Krunker red, profiles only */
+  --kr-bg: #15151a;
+  --kr-line: #2a2a33;
+}
+body {
+  background: var(--bg) !important;
+  font-family: Oxanium, Inter, system-ui, "Segoe UI", sans-serif;
+}
+body::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
+  background: radial-gradient(900px 420px at 50% -120px, #6366f118, transparent 70%); }
+::selection { background: #6366f155; }
+::-webkit-scrollbar { width: 10px; height: 10px; } ::-webkit-scrollbar-thumb { background: #2a2a38; border-radius: 10px; } ::-webkit-scrollbar-track { background: transparent; }
+
+/* ---------- header / nav ---------- */
+header { background: #0a0a0fe6 !important; border-bottom: 1px solid var(--line); padding: 14px 28px; }
+header h1 { letter-spacing: .01em; }
+.sub { color: var(--muted); }
+.logo { background: var(--accent-soft) !important; border: 1px solid #6366f144 !important; border-radius: 12px !important; }
+.donate, .installbtn { background: var(--panel) !important; color: var(--text) !important; border: 1px solid var(--line) !important; border-radius: 10px !important; }
+.donate:hover, .installbtn:hover { border-color: var(--accent) !important; }
+
+.viewbar {
+  display: flex;
+  align-items: stretch;
+  gap: 4px;
+  padding: 4px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow-x: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+/* Stretch every tab evenly across the bar (no dead space after Admin) */
+.viewbar > .viewbtn {
+  flex: 1 1 0;
+  min-width: 0;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 10px !important;
+  padding: 9px 10px !important;
+  color: var(--muted) !important;
+  white-space: nowrap;
+  transition: background .15s, color .15s;
+  text-align: center;
+}
+.viewbtn:hover { background: var(--panel2) !important; color: var(--text) !important; }
+.viewbtn.active { background: var(--accent) !important; color: #fff !important; box-shadow: 0 4px 14px #6366f155; }
+/* Cloud / install tools sit after tabs without leaving an empty flex hole */
+.viewbar > .viewtools {
+  margin-left: 4px;
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.viewbar > .viewtools:empty { display: none; }
+.cloudstat { background: var(--panel2) !important; border: 1px solid var(--line) !important; border-radius: 99px !important; color: var(--muted) !important; }
+.cloudstat[data-state="on"], .cloudstat[data-state="ok"] { color: var(--green) !important; }
+
+/* ---------- surfaces ---------- */
+.stat, .panel, .modal, .pick, .xmodal { background: var(--panel) !important; border: 1px solid var(--line) !important; border-radius: 14px !important; box-shadow: none !important; }
+.stat small { color: var(--muted); text-transform: uppercase; letter-spacing: .06em; font-size: 11px; }
+.stat strong { font-weight: 700; }
+.progress, .spBar { background: #1d1d29 !important; height: 6px; }
+.progress > i, .spBar > i { background: linear-gradient(90deg, var(--accent), #8b8cff) !important; }
+.sectionhead { color: var(--text); }
+.muted { color: var(--muted); }
+
+/* ---------- controls ---------- */
+input, select, textarea { background: #0e0e15 !important; color: var(--text) !important; border: 1px solid var(--line) !important; border-radius: 10px !important; }
+input:focus, select:focus, textarea:focus { outline: none; border-color: var(--accent) !important; box-shadow: 0 0 0 3px #6366f133; }
+button { font-family: inherit; }
+.toolbar button, .tradebtns button, .modalactions button, .pickfoot button, #reset, #export, #import, .checkall {
+  background: var(--panel2); color: var(--text); border: 1px solid var(--line); border-radius: 10px; }
+.toolbar button:hover, .tradebtns button:hover, .modalactions button:hover, .pickfoot button:hover, .checkall:hover { border-color: var(--accent); }
+button.primary, .xbtn.primary, .modalactions .primary, .tradebtns .primary { background: var(--accent) !important; color: #fff !important; border-color: var(--accent) !important; }
+button.primary:hover, .xbtn.primary:hover { filter: brightness(1.12); }
+.xbtn { background: var(--panel2); border: 1px solid var(--line); border-radius: 10px; }
+.xbtn:hover { border-color: var(--accent); }
+.xbtn.danger { color: var(--red); border-color: #5b2430; }
+
+/* ---------- tabs / pills (PGTrade style) ---------- */
+.tradeTabs { border-bottom: 1px solid var(--line); }
+.tradeTabs .ttab.active, .spTab.active { color: #fff; border-bottom-color: var(--accent); }
+.mfilt { background: var(--panel); border-color: var(--line); border-radius: 99px; }
+.mfilt.active { background: var(--accent-soft); border-color: var(--accent); color: #c7c8ff; }
+.ttabN { background: var(--accent); color: #fff; }
+
+/* ---------- Pokémon cards ---------- */
+.grid { gap: 10px; }
+.card { background: var(--panel) !important; border: 1px solid var(--line) !important; border-radius: 12px !important; transition: transform .15s, border-color .15s, box-shadow .15s; }
+.card:hover { border-color: #4a4a66 !important; transform: translateY(-2px); box-shadow: 0 8px 22px #00000066; }
+.card.caught { background: linear-gradient(160deg, #15241c, var(--panel)) !important; border-color: #2f6b49 !important; }
+.skel { background: linear-gradient(90deg, #14141d, #1c1c28, #14141d) !important; }
+
+/* ---------- trading + matches (PGTrade-like columns and cards) ---------- */
+.tradebar { background: var(--panel) !important; }
+.tcol h2 { letter-spacing: .01em; }
+.pickbtn { background: var(--accent-soft) !important; color: #c7c8ff !important; border: 1px solid #6366f155 !important; border-radius: 99px !important; }
+.titem { background: var(--panel2) !important; border: 1px solid var(--line) !important; border-radius: 12px !important; }
+.xcodecard { background: var(--panel2) !important; border: 1px solid var(--line) !important; border-radius: 12px !important; transition: border-color .15s, transform .15s; }
+.xcodecard:hover { border-color: var(--accent) !important; transform: translateY(-2px); }
+.xchip { background: var(--accent-soft) !important; border: 1px solid #6366f144 !important; color: #c7c8ff !important; }
+.xchip.hi { background: #4ade8022 !important; border-color: #4ade8077 !important; color: #b8f5cd !important; }
+.xtag { border-radius: 99px; background: var(--panel); }
+.xtag.two { background: #4ade8022 !important; color: #86efac !important; border-color: #4ade8055 !important; }
+.empty { color: var(--muted); }
+
+/* ---------- chat ---------- */
+#chat, #chatBubble { background: var(--panel) !important; border-color: var(--line) !important; }
+#chatBubble { border-radius: 99px !important; }
+.chatsend { background: var(--panel) !important; border-color: var(--line) !important; }
+
+/* =====================================================================================================
+   KRUNKER SOCIAL — profiles, badges, clan tags, leaderboard
+   ===================================================================================================== */
+.profileHolder { max-width: 960px; margin: 0 auto; }
+.profileHolder .xbtn.profBackBtn { margin-bottom: 10px; border-radius: 4px; background: var(--kr-bg); text-transform: uppercase; letter-spacing: .08em; font-size: 11px; }
+
+/* slab */
+.profileHolder .scrollItemNew, .profileHolder .scrollItemNew.profileShell {
+  background: var(--kr-bg) !important; border: 1px solid var(--kr-line) !important; border-radius: 4px !important; box-shadow: 0 6px 0 #0000004d; }
+.profileShell.scrollItemNew { min-height: 176px; padding: 18px 20px; border-top: 3px solid var(--kr) !important; }
+.profileShell.scrollItemNew.hasBanner { background-image: linear-gradient(90deg, #15151aee 0%, #15151a99 55%, #15151a55 100%), var(--profile-banner) !important; }
+
+/* avatar: big square with red corner like the Krunker social card */
+#leftProfile { margin-right: 18px; }
+.profilePic, .profilePicEmoji { width: 120px !important; height: 120px !important; border-radius: 4px !important; border: 2px solid var(--kr-line) !important; background-color: #0e0e12; object-fit: cover; box-shadow: 4px 4px 0 #0006; }
+.profilePicEmoji { display: grid; place-items: center; font-size: 56px; }
+
+/* name + clan tag + badges */
+.leftTopHolder { display: flex; align-items: center; flex-wrap: wrap; gap: 2px 6px; }
+.leftTopHolder .profileName, .profileName { font-size: 26px !important; font-weight: 800; letter-spacing: .02em; text-shadow: 2px 2px 0 #0008; }
+.clanLink { display: inline-block; font-weight: 800 !important; font-size: 18px !important; letter-spacing: .04em; margin-left: 2px !important; padding: 0 6px; border-radius: 3px; background: #ffffff0f; text-shadow: 1px 1px 0 #0009; }
+.clanLink:hover { background: transparent; text-decoration: none !important; }
+.leftMidHolder { color: #8a8a96; text-transform: uppercase; letter-spacing: .1em; font-size: 11px; margin: 2px 0 8px; }
+.leftMidHolder span { color: #cfcfd6; }
+.follL { font-weight: 800; font-size: 20px; color: #fff !important; }
+.follCount { text-transform: uppercase; letter-spacing: .1em; font-size: 10px !important; color: #8a8a96 !important; }
+.follL:hover { text-decoration: none !important; color: var(--kr) !important; }
+
+/* action buttons: flat Krunker buttons */
+.bottomBtn { background: #24242d !important; color: #e8e8ee !important; border: 0 !important; border-radius: 3px !important; padding: 7px 16px !important; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; font-size: 11px !important; box-shadow: 0 3px 0 #0c0c10; transition: transform .08s, background .15s; }
+.bottomBtn:hover { background: #30303c !important; }
+.bottomBtn:active { transform: translateY(2px); box-shadow: 0 1px 0 #0c0c10; }
+.bottomBtn.follow { background: var(--kr) !important; color: #fff !important; box-shadow: 0 3px 0 #9e2f2f; }
+.bottomBtn.follow:hover { background: #f26a6a !important; }
+.bottomBtn.follow.isFollowing { background: #24242d !important; color: #cfcfd6 !important; box-shadow: 0 3px 0 #0c0c10; }
+.bottomBtn.follow.isFollowing:hover { background: #3a2226 !important; color: #ff9a9a !important; }
+.matIconBtn { border-radius: 3px; }
+
+/* tabs under the header slab */
+.profileNav { margin: 14px 0 10px; }
+.profileTabs { border-bottom: 2px solid var(--kr-line) !important; }
+.profileTab { text-transform: uppercase; letter-spacing: .1em; font-weight: 800; font-size: 12px; color: #8a8a96 !important; border-bottom: 3px solid transparent; margin-bottom: -2px; }
+.profileTab:hover { color: #fff !important; }
+.profileTab.pTabA { color: #fff !important; border-bottom-color: var(--kr) !important; }
+
+/* section heads + stat tiles */
+.scrollItemHead { text-transform: uppercase; letter-spacing: .12em; font-size: 12px !important; font-weight: 800 !important; color: #b9b9c4 !important; padding-bottom: 6px; border-bottom: 1px solid var(--kr-line); margin-bottom: 10px !important; }
+.profileHolder .xcardstats { gap: 8px !important; }
+.profileHolder .xcardstats > div { background: #1b1b22; border: 1px solid var(--kr-line); border-left: 3px solid var(--kr); border-radius: 3px; padding: 10px 12px; }
+.profileHolder .xcardstats small { text-transform: uppercase; letter-spacing: .1em; font-size: 10px; color: #8a8a96; }
+.profileHolder .xcardstats b { font-size: 20px; font-weight: 800; color: #fff; }
+.profileHolder .spBar { border-radius: 0; height: 8px; } .profileHolder .spBar > i { background: var(--kr) !important; }
+.profileHolder .xchip { border-radius: 3px !important; background: #1b1b22 !important; border: 1px solid var(--kr-line) !important; color: #e8e8ee !important; }
+.profileHolder .xchip.hi { border-color: var(--kr) !important; }
+
+/* badges (profile + badge shelf + Community) */
+.badgeGrid { gap: 8px; }
+.badgeCard, .fbadge { background: #1b1b22 !important; border: 1px solid var(--kr-line) !important; border-radius: 3px !important; box-shadow: 0 3px 0 #0c0c10; transition: transform .1s, border-color .15s; }
+.badgeCard:hover, .fbadge:hover { transform: translateY(-2px); border-color: var(--kr) !important; }
+.badgeCard.locked, .fbadge.locked, .fbadge.off { filter: grayscale(1); opacity: .45; }
+.fbname { text-transform: uppercase; letter-spacing: .06em; font-weight: 800; }
+.fbprog { background: #0e0e12 !important; border-radius: 0 !important; } .fbprog > i { background: var(--kr) !important; }
+
+/* Community leaderboard rows: Krunker leaderboard strips
+   ONLY .xlbrow / .xlb .xrow — never form .xrow (Admin, Settings, Moderation) */
+.xlb { gap: 3px; }
+.xlbrow,
+.xlb .xrow {
+  background: #17171d !important;
+  border: 0 !important;
+  border-left: 3px solid var(--kr-line) !important;
+  border-radius: 0 !important;
+}
+.xlbrow:nth-child(odd),
+.xlb .xrow:nth-child(odd) { background: #1b1b22 !important; }
+.xlbrow:hover,
+.xlb .xrow:hover { border-left-color: var(--kr) !important; background: #22222b !important; }
+.xlbrow:nth-child(1),
+.xlb .xrow:nth-child(1) { border-left-color: #ffd23f !important; }
+.xlbrow:nth-child(2),
+.xlb .xrow:nth-child(2) { border-left-color: #c9ccd3 !important; }
+.xlbrow:nth-child(3),
+.xlb .xrow:nth-child(3) { border-left-color: #d98a4a !important; }
+.xrank { font-weight: 800; color: #8a8a96; }
+.xname .clanLink, .xlb .xrow .clanLink, .chatlog .clanLink { font-size: 13px !important; padding: 0 4px; }
+
+/* Form rows: no grey strip / no rank colors — clean fields, white text, a little inset */
+.xform .xrow,
+.admInsights .xrow,
+#insBody .xrow {
+  background: transparent !important;
+  border: 0 !important;
+  border-left: 0 !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  gap: 12px;
+}
+.xform .xrow:hover,
+.admInsights .xrow:hover,
+#insBody .xrow:hover {
+  background: transparent !important;
+  border-left-color: transparent !important;
+}
+.xform label,
+.xform .xgrow,
+.admInsights .xform label,
+#insBody .xform label {
+  color: #fff !important;
+}
+.xform label > span,
+.xform .xgrow > span {
+  color: #fff !important;
+}
+/* Label caption above the field stays slightly muted; value text is white */
+.xform label {
+  gap: 6px;
+}
+.xform input,
+.xform select,
+.xform textarea {
+  color: #fff !important;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* small screens */
+@media (max-width: 700px) {
+  header { padding: 10px 14px; }
+  .profilePic, .profilePicEmoji { width: 96px !important; height: 96px !important; }
+  .leftTopHolder .profileName, .profileName { font-size: 22px !important; }
+}
+
+/* #46 Profile themes */
+.profileShell.ptheme-indigo { --profile-accent: #6366f1; box-shadow: 0 0 0 1px #6366f144, 0 8px 28px #6366f122; }
+.profileShell.ptheme-rose { --profile-accent: #e11d48; box-shadow: 0 0 0 1px #e11d4844, 0 8px 28px #e11d4822; }
+.profileShell.ptheme-forest { --profile-accent: #16a34a; box-shadow: 0 0 0 1px #16a34a44, 0 8px 28px #16a34a22; }
+.profileShell.ptheme-sunset { --profile-accent: #ea580c; box-shadow: 0 0 0 1px #ea580c44, 0 8px 28px #ea580c22; }
+.profileShell.ptheme-midnight { --profile-accent: #7c3aed; box-shadow: 0 0 0 1px #7c3aed44, 0 8px 28px #7c3aed22; background: linear-gradient(180deg, #0f0a1a 0%, transparent 40%); }
+.profileShell[class*="ptheme-"] .profileName { color: var(--profile-accent, inherit); }

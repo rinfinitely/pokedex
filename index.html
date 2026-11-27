@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><base href="/"><meta name="referrer" content="no-referrer"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0a0a0f"><link rel="manifest" href="/manifest.webmanifest"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="GO Dex"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>GO Pokédex Tracker</title>
+<link rel="icon" type="image/png" href="/favicon.png"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://raw.githubusercontent.com"><link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin><link rel="preconnect" href="https://pokeapi.co" crossorigin><link rel="dns-prefetch" href="https://files.catbox.moe"><link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/oxanium/v6/RrQPboN_4yJ0JmiMUW7sIGjd1IA9G81JfkiLD3U.woff2"><link rel="stylesheet" href="/styles.css?v=20261107d"><link rel="stylesheet" href="/features.css?v=20261106p"><link rel="stylesheet" href="/theme.css?v=20261106p"><link rel="stylesheet" href="/pgtrade.css?v=11"><link rel="stylesheet" href="/more.css?v=20261106p"></head>
+<body class="haschat"><script>try{if(localStorage.getItem('pokedexChat.min')==='1')document.body.classList.add('chatmin');var p=location.pathname||'/';if(/^\/u\//.test(p)||/^#u=/.test(location.hash||'')){document.body.dataset.view='social'}}catch(e){}</script>
+<header><div class="brand"><div class="logo"><img src="/favicon.svg" alt="" width="42" height="42"></div><div><h1>GO Pokédex Tracker</h1><div class="sub">Your Pokémon GO collection, organized by National Pokédex</div></div></div><button class="installbtn" id="installBtn" type="button" hidden title="Install this site as an app">📲 Install app</button><a class="donate" id="donateBtn" href="https://www.patreon.com/cw/rinfinite/membership" target="_blank" rel="noopener noreferrer" title="Help cover hosting costs">☕ Support this site</a></header>
+<main class="wrap">
+<nav class="viewbar" id="viewbar"><button class="viewbtn active" data-view="dex" type="button">📖 Pokédex</button><button class="viewbtn" data-view="dashboard" type="button">📊 Dashboard</button><button class="viewbtn" data-view="matches" type="button">🔁 Matches <span class="ttabN" id="matchTabN" hidden></span></button><button class="viewbtn" data-view="list" type="button">🖼 List Generator</button><button class="viewbtn" data-view="community" type="button">🏆 Community</button><button class="viewbtn" data-view="codes" type="button">🤝 Friend codes</button><button class="viewbtn" data-view="suggestions" type="button">💡 Suggestions</button><button class="viewbtn" data-view="social" type="button">🌐 Social</button><span class="viewtools"><button class="cloudstat" id="cloudStat" type="button" data-state="off">☁ Sign in to sync</button></span></nav>
+<div class="stats dexonly">
+ <div class="stat"><small>Registered species</small><strong id="caughtCount">0 / 3484</strong><div class="progress"><i id="caughtBar"></i></div></div>
+ <div class="stat"><small>Pokédex completion</small><strong id="percent">0%</strong><div class="progress"><i id="percentBar"></i></div></div>
+ <div class="stat"><small>Shiny registered</small><strong id="shinyCount">0</strong><div class="progress"><i id="shinyBar"></i></div></div>
+ <div class="stat"><small>Special registrations</small><strong id="specialCount">0</strong><div class="progress"><i id="specialBar"></i></div></div>
+</div>
+<div class="panel toolbar dexonly">
+ <input id="search" placeholder="Search Pokémon or Pokédex number…">
+ <select id="generation"><option value="all">All generations</option></select>
+ <select id="type"><option value="all">All types</option></select>
+ <select id="status"><option value="all">All Pokémon</option><option value="caught">Registered</option><option value="missing">Not registered</option><option value="shiny">Shiny registered</option><option value="special">Has special registration</option><option value="shadow">Shadow</option><option value="purified">Purified</option><option value="mega">Mega</option><option value="dynamax">Dynamax / Gigantamax</option><option value="hundo">Hundo (100% IV)</option><option value="nundo">Nundo (0% IV)</option><option value="costume">Costume / special form</option></select>
+ <select id="formView" title="Show forms"><option value="all">Forms: all cards</option><option value="forms">Forms only</option><option value="base">Base only (no form)</option></select>
+ <select id="formSort" title="Sort"><option value="dex">Sort: Pokédex order</option><option value="form">Sort: by form name</option><option value="missing">Sort: missing first</option><option value="owned">Sort: registered first</option></select>
+ <button id="export">Export backup</button><button id="import">Import backup</button><button id="reset">Reset</button>
+ <input id="file" type="file" accept="application/json" hidden>
+</div>
+<div class="sectionhead dexonly"><b id="listTitle">All Pokémon</b><div class="headright"><span id="genCount" class="gencount" hidden><span id="genCountText"></span><i class="genbar"><i id="genCountBar"></i></i></span><button id="checkAll" class="checkall" type="button" hidden>✓ Check all</button><span id="shown"><i class="spin"></i>Loading Pokédex…</span></div></div>
+<div class="grid dexonly" id="grid" aria-busy="true"><i class="skel"></i><i class="skel"></i><i class="skel"></i><i class="skel"></i><i class="skel"></i><i class="skel"></i><i class="skel"></i><i class="skel"></i><i class="skel"></i><i class="skel"></i><i class="skel"></i><i class="skel"></i><i class="skel"></i><i class="skel"></i></div>
+<div id="tradeView" class="tradeonly">
+ <div id="sharedBox"></div>
+ <div class="panel tradebar"><div><b>Trade lists</b><div class="muted">Keep track of what you’re hunting for and what you can trade away. Saved in this browser.</div></div><div class="tradebtns"><button id="tCopy" type="button">Copy as text</button><button id="tLink" type="button">Copy share link</button><button id="tImg" type="button">Save as image</button><button id="tClear" type="button">Clear lists</button></div></div>
+ <div class="tdashhead"><div><h2>Dashboard</h2><div class="muted">Manage your trade pair and find matches</div></div><button class="pgbtn js-openpair" type="button"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg> New Trade Pair</button></div>
+ <div class="tstats"><div class="tstat"><small>TRADE PAIRS</small><div><b id="tsPairs">0</b> <span>/ 10</span></div></div><div class="tstat"><small>TOTAL POKEMON</small><div><b id="tsTotal">0</b></div></div><div class="tstat"><small>LAST ACTIVE</small><div><b id="tsLast">—</b></div></div></div>
+ <div id="pairBoard"></div>
+ <div id="listGen"></div>
+ <datalist id="tdl"></datalist>
+</div>
+<div id="adminView" class="adminonly"></div>
+<div id="communityView" class="xonly"></div>
+<div id="codesView" class="xonly"></div>
+<div id="suggestionsView" class="xonly"></div>
+<div id="socialView" class="xonly"></div>
+</main>
+<div class="modalback" id="modal"><div class="modal"><h2 id="modalTitle">Custom entry</h2><p id="modalDesc">Add a form or costume to this Pokémon's personal checklist.</p><input id="customName" placeholder="e.g. Alolan form / Party Hat"><div class="modalactions"><button id="cancel">Cancel</button><button class="primary" id="saveCustom">Add entry</button></div></div></div>
+<div class="pairback" id="pairModal" hidden><div class="pairmodal" role="dialog" aria-modal="true" aria-labelledby="pairTitle">
+ <div class="pairhead"><h2 id="pairTitle">Create Trade Pair</h2><button class="pairx" id="pairX" type="button" aria-label="Close">✕</button></div>
+ <div class="pairbody">
+  <section class="dsec" data-dlist="offer">
+   <div class="dhead"><h2>For Trade</h2><span class="dcount" id="offerN"></span></div>
+   <label class="dsearch"><svg class="dsico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input class="pk-search" type="search" placeholder="Search by name or dex number…" autocomplete="off" aria-label="Search For Trade"></label>
+   <div class="chips pk-chips"></div>
+   <div class="pickgrid pk-grid" aria-label="For Trade picker"></div>
+   <div class="pickfoot"><span class="pk-count"></span><button class="pk-clear" type="button">Clear all</button></div>
+  </section>
+  <div class="dswap" aria-hidden="true"><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4 3 8l4 4M3 8h14M17 20l4-4-4-4M21 16H7"/></svg></span></div>
+  <section class="dsec" data-dlist="want">
+   <div class="dhead"><h2>Looking For</h2><span class="dcount" id="wantN"></span></div>
+   <label class="dsearch"><svg class="dsico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input class="pk-search" type="search" placeholder="Search by name or dex number…" autocomplete="off" aria-label="Search Looking For"></label>
+   <div class="chips pk-chips"></div>
+   <div class="pickgrid pk-grid" aria-label="Looking For picker"></div>
+   <div class="pickfoot"><span class="pk-count"></span><button class="pk-clear" type="button">Clear all</button></div>
+  </section>
+  <label class="pairlabel" for="pairNote">Note <span class="muted">(optional)</span><span class="pairmax" id="pairNoteN">200</span></label>
+  <textarea id="pairNote" maxlength="200" rows="2" placeholder="e.g. Trinket for trinket only, lucky trades preferred"></textarea>
+  <div class="muted pairhelp">Shown on this pair wherever people see it — matches and your profile.</div>
+  <div class="pairactions"><button class="pgbtn" id="pairCreate" type="button">Create</button><button class="pgbtn ghost" id="pairCancel" type="button">Cancel</button></div>
+ </div>
+</div></div>
+<script src="/data.js?v=20261123g"></script><script src="/app.js?v=20261123g"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer></script>
+<script src="/chat.js?v=20261107c"></script><script src="/extras.js?v=20261106p"></script><script src="/features.js?v=20261106p"></script><script src="/more.js?v=20261106p"></script>
+<script src="/background.js?v=3"></script>
+<script src="/particles.js?v=5"></script></body></html>

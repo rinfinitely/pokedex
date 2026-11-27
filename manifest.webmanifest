@@ -1,0 +1,23 @@
+{
+  "name": "GO Pokédex Tracker",
+  "short_name": "GO Dex",
+  "description": "Your Pokémon GO collection, organized by National Pokédex — with cloud sync, trading and friend codes.",
+  "id": "./",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0a0a0f",
+  "theme_color": "#0a0a0f",
+  "categories": ["games", "utilities"],
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Pokédex", "url": "/?view=dex", "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Trading", "url": "/?view=trade", "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }] },
+    { "name": "Friend codes", "url": "/?view=codes", "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }] }
+  ]
+}

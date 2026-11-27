@@ -1,0 +1,116 @@
+{
+  "rewrites": [
+    {
+      "source": "/ext-pgp/:path*",
+      "destination": "https://trade.pokemongopro.com/:path*"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "api.pokedex.world"
+        }
+      ],
+      "destination": "https://ntietoxpxrmssceavqqw.supabase.co/functions/v1/api"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "api.pokedex.world"
+        }
+      ],
+      "destination": "https://ntietoxpxrmssceavqqw.supabase.co/functions/v1/api/:path*"
+    },
+    {
+      "source": "/api",
+      "destination": "https://ntietoxpxrmssceavqqw.supabase.co/functions/v1/api"
+    },
+    {
+      "source": "/api/:path*",
+      "destination": "https://ntietoxpxrmssceavqqw.supabase.co/functions/v1/api/:path*"
+    },
+    {
+      "source": "/u/:path*",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/dex",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/trade",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/community",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/codes",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/suggestions",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/social",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/badges",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/insights",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/admin",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/pokedex",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/dashboard",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/matches",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/list",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/list-generator",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)\\.(js|css|png|svg|woff2|webmanifest|ico)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(index\\.html|sw\\.js)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    }
+  ]
+}

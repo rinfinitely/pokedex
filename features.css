@@ -1,0 +1,958 @@
+/* features.css — badges, trade calculator, match alerts, 🔔 inbox, insights, donation goal bar. Uses the site's existing colour variables. */
+.fonly {
+    display: none
+}
+
+body[data-view=badges] #badgesView, body.isadmin[data-view=insights] #insightsView {
+    display: block
+}
+
+#insightsTabBtn[hidden] {
+    display: none
+}
+
+body[data-view=badges] .dexonly, body[data-view=insights] .dexonly {
+    display: none !important
+}
+
+.fonly .panel, .fcalc, .fmatchalerts {
+    margin-bottom: 14px;
+    padding: 16px
+}
+
+.fsmall {
+    font-size: 13px !important
+}
+
+.xform textarea {
+    resize: vertical
+}
+
+/* donation goal bar */
+/* sits inside <main class=wrap> right above the tab bar, so it spans exactly from the Pokédex tab to the Live alerts button */
+.fgoalwrap {
+    margin: 0 0 10px;
+    padding: 0
+}
+
+.fgoal {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    background: linear-gradient(90deg, #15293a, #182434);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 8px 14px;
+    color: var(--text);
+    text-decoration: none;
+    font-size: 13px
+}
+
+.fgoal:hover {
+    border-color: var(--gold)
+}
+
+.fgtitle {
+    font-weight: 700;
+    white-space: nowrap
+}
+
+.fgbar {
+    flex: 1 1 160px;
+    height: 10px;
+    background: #0b1018;
+    border-radius: 99px;
+    overflow: hidden;
+    border: 1px solid #2a3a4f
+}
+
+.fgbar i {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, var(--green), var(--gold));
+    border-radius: 99px;
+    transition: width .6s
+}
+
+.fgnum {
+    color: var(--muted);
+    white-space: nowrap
+}
+
+.fgcta {
+    color: var(--gold);
+    font-weight: 700;
+    white-space: nowrap
+}
+
+/* badges */
+.fbicon {
+    position: relative;
+    display: inline-grid;
+    place-items: center;
+    border-radius: 50%;
+    background: none;
+    box-shadow: none;
+    flex: none;
+    overflow: hidden;
+    line-height: 1
+}
+
+.fbicon img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: none;
+}
+
+.fbicon.locked {
+    filter: grayscale(1) brightness(.55);
+    box-shadow: 0 0 0 2px #0b1018, 0 0 0 3px #29394d
+}
+
+.fbgrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 12px
+}
+
+.fbadge {
+    display: grid;
+    justify-items: center;
+    gap: 6px;
+    text-align: center;
+    background: #0e1722;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 16px 10px 12px;
+    color: var(--text);
+    font: inherit;
+    cursor: pointer
+}
+
+.fbadge:hover {
+    border-color: var(--cyan)
+}
+
+.fbadge.got {
+    border-color: #5a7d3c;
+    background: linear-gradient(#10201a, #0e1722)
+}
+
+.fbname {
+    font-size: 14px
+}
+
+.fbadge small {
+    color: var(--muted);
+    font-size: 11.5px;
+    line-height: 1.35
+}
+
+.fbprog {
+    width: 100%;
+    height: 6px;
+    background: #0b1018;
+    border-radius: 99px;
+    overflow: hidden
+}
+
+.fbprog i {
+    display: block;
+    height: 100%;
+    background: var(--cyan);
+    border-radius: 99px
+}
+
+.fbadge.got .fbprog i {
+    background: var(--green)
+}
+
+.fbnum {
+    font-weight: 700
+}
+
+.fbmodal {
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    gap: 8px
+}
+
+.fbmodal .xcardstats {
+    width: 100%;
+    text-align: left
+}
+
+.fbstrip {
+    margin: 0 0 12px
+}
+
+.fbstrip small {
+    display: block;
+    color: var(--muted);
+    margin-bottom: 6px
+}
+
+.fbstrip > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px
+}
+
+.fbmgr {
+    display: grid;
+    gap: 8px
+}
+
+.fbmrow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #0e1722;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 8px 12px
+}
+
+.fbmtxt {
+    flex: 1;
+    display: grid;
+    min-width: 0
+}
+
+.fbmtxt small {
+    color: var(--muted)
+}
+
+.fbprev {
+    display: grid;
+    place-items: center;
+    padding: 6px 0
+}
+
+.fbimg {
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 10px 12px;
+    display: grid;
+    gap: 10px
+}
+
+.fbimg legend {
+    color: var(--muted);
+    font-size: 12px;
+    padding: 0 6px
+}
+
+.fbfile {
+    display: inline-block
+}
+
+.fbmaker summary {
+    cursor: pointer;
+    color: var(--cyan);
+    margin-bottom: 8px
+}
+
+.fbeditor input[type=color] {
+    padding: 2px;
+    height: 38px;
+    width: 70px
+}
+
+/* trade calculator + match alerts */
+.fmtoggle {
+    align-items: center !important
+}
+
+.fmsel {
+    background: #0e1722;
+    color: var(--text);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 8px 10px;
+    font: inherit;
+    font-size: 13px
+}
+
+/* bell + inbox */
+.fbell {
+    position: relative;
+    background: #111b27;
+    color: var(--text);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: auto;
+    flex: none
+}
+
+.fbell:hover {
+    border-color: var(--cyan)
+}
+
+.fbell[hidden] {
+    display: none
+}
+
+.fbell + .donate, .fbell + .installbtn {
+    margin-left: 0
+}
+
+.fdot {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    min-width: 19px;
+    height: 19px;
+    padding: 0 5px;
+    border-radius: 99px;
+    background: #e5484d;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 800;
+    display: grid;
+    place-items: center;
+    border: 2px solid var(--bg)
+}
+
+.fdot[hidden] {
+    display: none
+}
+
+.finbox {
+    display: grid;
+    gap: 6px;
+    margin: 12px 0;
+    max-height: 46vh;
+    overflow-y: auto
+}
+
+.fnrow {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    text-align: left;
+    background: #0e1722;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 10px 12px;
+    color: var(--text);
+    font: inherit;
+    cursor: pointer
+}
+
+.fnrow.unread {
+    border-color: #287c98;
+    background: #10222d
+}
+
+.fnrow:hover {
+    border-color: var(--cyan)
+}
+
+.fnicon {
+    font-size: 20px
+}
+
+.fntxt {
+    flex: 1;
+    display: grid;
+    min-width: 0
+}
+
+.fntxt small {
+    color: var(--muted)
+}
+
+.fntime {
+    color: var(--muted);
+    font-size: 11px;
+    white-space: nowrap
+}
+
+.fprefs {
+    display: grid;
+    gap: 8px;
+    margin-top: 10px
+}
+
+/* insights */
+.fitabs {
+    flex-wrap: wrap
+}
+
+.fitabs button {
+    padding: 9px 14px
+}
+
+.fstats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px
+}
+
+.fstat {
+    background: #0e1722;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 10px 12px;
+    display: grid;
+    gap: 2px
+}
+
+.fstat small {
+    color: var(--muted);
+    font-size: 11px
+}
+
+.fstat b {
+    font-size: 22px
+}
+
+.fstat em {
+    font-style: normal;
+    color: var(--muted);
+    font-size: 11px
+}
+
+.fgrid2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 14px
+}
+
+.fgrid2 > .panel {
+    margin-bottom: 0
+}
+
+.fonly .fgrid2 {
+    margin-bottom: 14px
+}
+
+.fchart {
+    width: 100%;
+    height: 90px;
+    margin-top: 10px;
+    display: block
+}
+
+.fchart rect {
+    fill: var(--cyan)
+}
+
+.fchart rect:hover {
+    fill: var(--gold)
+}
+
+.fchartcap {
+    display: flex;
+    justify-content: space-between;
+    color: var(--muted);
+    font-size: 11px
+}
+
+.ftop, .fteams {
+    display: grid;
+    gap: 6px;
+    margin-top: 10px
+}
+
+.ftop > div, .fteams > div {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background: #0e1722;
+    overflow: hidden;
+    font-size: 13px
+}
+
+.ftop i, .fteams i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(98,217,239,.2);
+    z-index: 0
+}
+
+.ftop span, .ftop b, .fteams span, .fteams b {
+    position: relative;
+    z-index: 1
+}
+
+.frep {
+    background: #0e1722;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    display: grid;
+    gap: 6px
+}
+
+.frephead {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px
+}
+
+.frepbody {
+    background: #0b1018;
+    border-radius: 8px;
+    padding: 8px 10px;
+    word-break: break-word
+}
+
+.fmrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 0;
+    border-bottom: 1px solid #1c2a3b
+}
+
+.fmrow small {
+    display: block;
+    color: var(--muted)
+}
+
+.fmlog {
+    display: grid;
+    gap: 4px;
+    font-size: 13px;
+    max-height: 260px;
+    overflow-y: auto;
+    margin-top: 8px
+}
+
+.fuser {
+    margin-top: 12px;
+    display: grid;
+    gap: 10px;
+    background: #0e1722;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 12px
+}
+
+.fuserhead {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 17px
+}
+
+.fbanned {
+    background: #3a1820;
+    border-color: #6b2a33;
+    color: var(--red)
+}
+
+.fmact {
+    align-items: end
+}
+
+.fword button {
+    background: none;
+    border: 0;
+    color: inherit;
+    cursor: pointer;
+    padding: 0 0 0 4px
+}
+
+.fchip.have {
+    background: #163a27;
+    border-color: #2f7a52;
+    color: #a8f0c6
+}
+
+.fchip.miss {
+    background: #3a1820;
+    border-color: #6b2a33;
+    color: #ffb3bd
+}
+
+.fevfeat {
+    margin-top: 14px
+}
+
+.fevfeat h3 {
+    margin: 0 0 6px
+}
+
+@media (max-width: 640px) {
+    .fgoal {
+        gap: 8px
+    }
+
+    .fgcta {
+        display: none
+    }
+}
+
+/* loading skeletons for the non-Pokédex tabs (same shimmer as the Pokédex cards) */
+.skelgrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 12px;
+    margin-top: 10px
+}
+
+.skelgrid .skel {
+    height: 120px
+}
+
+.skelgrid.tall .skel {
+    height: 170px
+}
+
+.skelgrid.badges {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr))
+}
+
+.skelgrid.badges .skel {
+    height: 170px
+}
+
+.skelgrid.rows {
+    grid-template-columns: 1fr;
+    gap: 8px
+}
+
+.skelgrid.rows .skel {
+    height: 52px
+}
+
+.xrow[hidden], .xform [hidden], .fbeditor [hidden] {
+    display: none !important
+}
+
+/* trade cost chart: compact by default, click to enlarge */
+.fcchart {
+    margin-top: 6px;
+    display: flex;
+    justify-content: center
+}
+
+.fczoom {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 260px;
+    padding: 0;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    overflow: hidden;
+    background: none;
+    cursor: zoom-in;
+    line-height: 0
+}
+
+.fczoom:hover {
+    border-color: var(--cyan)
+}
+
+.fczoom img {
+    display: block;
+    width: 100%;
+    height: auto
+}
+
+.fczoomhint {
+    display: block;
+    line-height: 1.3;
+    font-size: 11px;
+    color: var(--muted);
+    background: #0e1722;
+    border-top: 1px solid var(--line);
+    padding: 4px 8px;
+    text-align: center
+}
+
+.xmodal.fzoom {
+    width: min(1140px, 96vw);
+    padding: 10px;
+    cursor: zoom-out
+}
+
+.fczoomimg {
+    display: block;
+    max-width: 100%;
+    max-height: 86vh;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px
+}
+
+.fcalc .xhead {
+    margin-bottom: 0
+}
+
+.fcalc {
+    padding: 12px 14px !important
+}
+
+/* Seasonal themes */
+body.season-winter {
+    --cyan: #7dd3fc;
+}
+
+body.season-winter::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(ellipse at top, rgba(125,211,252,.06), transparent 60%);
+    z-index: -1;
+}
+
+body.season-halloween {
+    --cyan: #fb923c;
+}
+
+body.season-halloween::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(ellipse at bottom, rgba(251,146,60,.07), transparent 55%);
+    z-index: -1;
+}
+
+body.season-spring {
+    --cyan: #86efac;
+}
+
+body.season-summer {
+    --cyan: #fbbf24;
+}
+
+/* Compact match picks */
+.matchpicks .xbtn {
+    font-size: 13px;
+    padding: 6px 10px;
+}
+
+/* Profile badge art — no circular rings */
+.profileHolder .fbicon, #spBadges .fbicon, .fbstrip .fbicon {
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    display: inline-grid;
+    place-items: center;
+}
+
+.profileHolder .fbicon img, #spBadges .fbicon img, .fbstrip .fbicon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 0 !important;
+    border: none !important;
+}
+
+.profileHolder .fbicon b, #spBadges .fbicon b {
+    display: none;
+}
+
+/* hide emoji fallback when image present */
+.profileHolder .fbicon:not(:has(img)) b, #spBadges .fbicon:not(:has(img)) b {
+    display: inline;
+}
+
+/* ---- Trading: "My lists | Matches" sub-tabs ---- */
+.tradeTabs { display: flex; gap: 6px; margin: 0 0 12px; border-bottom: 1px solid var(--line); }
+.tradeTabs .ttab { background: none; border: none; border-bottom: 2px solid transparent; color: var(--muted); padding: 10px 16px; font: inherit; font-weight: 600; cursor: pointer; margin-bottom: -1px; }
+.tradeTabs .ttab:hover { color: var(--text); }
+.tradeTabs .ttab.active { color: #fff; border-bottom-color: var(--cyan); }
+.ttabN { display: inline-block; min-width: 20px; padding: 0 6px; margin-left: 4px; border-radius: 99px; background: var(--cyan); color: #04121a; font-size: 12px; line-height: 20px; text-align: center; font-weight: 700; }
+.socPrompt { padding: 28px 12px; line-height: 1.8; }
+
+    font-size: 13px;
+    padding: 6px 10px;
+}
+
+/* Profile badge art — no circular rings */
+.profileHolder .fbicon, #spBadges .fbicon, .fbstrip .fbicon {
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    display: inline-grid;
+    place-items: center;
+}
+
+.profileHolder .fbicon img, #spBadges .fbicon img, .fbstrip .fbicon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 0 !important;
+    border: none !important;
+}
+
+.profileHolder .fbicon b, #spBadges .fbicon b {
+    display: none;
+}
+
+/* hide emoji fallback when image present */
+.profileHolder .fbicon:not(:has(img)) b, #spBadges .fbicon:not(:has(img)) b {
+    display: inline;
+}
+
+/* ---- Trading: "My lists | Matches" sub-tabs ---- */
+.tradeTabs { display: flex; gap: 6px; margin: 0 0 12px; border-bottom: 1px solid var(--line); }
+.tradeTabs .ttab { background: none; border: none; border-bottom: 2px solid transparent; color: var(--muted); padding: 10px 16px; font: inherit; font-weight: 600; cursor: pointer; margin-bottom: -1px; }
+.tradeTabs .ttab:hover { color: var(--text); }
+.tradeTabs .ttab.active { color: #fff; border-bottom-color: var(--cyan); }
+.ttabN { display: inline-block; min-width: 20px; padding: 0 6px; margin-left: 4px; border-radius: 99px; background: var(--cyan); color: #04121a; font-size: 12px; line-height: 20px; text-align: center; font-weight: 700; }
+.socPrompt { padding: 28px 12px; line-height: 1.8; }
+
+
+/* ---- Admin-embedded Insights: same look as standalone Insights ---- */
+/* DOM: .admInsights > #insBody > (.panel | .fgrid2) */
+.admInsights {
+  display: block;
+  width: 100%;
+/* ---- Trading: "My lists | Matches" sub-tabs ---- */
+.tradeTabs { display: flex; gap: 6px; margin: 0 0 12px; border-bottom: 1px solid var(--line); }
+.tradeTabs .ttab { background: none; border: none; border-bottom: 2px solid transparent; color: var(--muted); padding: 10px 16px; font: inherit; font-weight: 600; cursor: pointer; margin-bottom: -1px; }
+.tradeTabs .ttab:hover { color: var(--text); }
+.tradeTabs .ttab.active { color: #fff; border-bottom-color: var(--cyan); }
+.ttabN { display: inline-block; min-width: 20px; padding: 0 6px; margin-left: 4px; border-radius: 99px; background: var(--cyan); color: #04121a; font-size: 12px; line-height: 20px; text-align: center; font-weight: 700; }
+
+
+
+/* ---- Admin-embedded Insights host (chat.js) ---- */
+.admInsights { display: block; width: 100%; box-sizing: border-box; }
+#insBody {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+/* Children of #insBody are .panel or .fgrid2 — gap handles vertical spacing */
+#insBody > .panel {
+  margin-bottom: 0;
+  padding: 16px 18px;
+  box-sizing: border-box;
+}
+#insBody > .fgrid2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 16px;
+  margin-bottom: 0;
+  align-items: stretch; /* equal-height panels (Muted = Chat filters) */
+}
+#insBody > .fgrid2 > .panel {
+  margin-bottom: 0;
+  padding: 16px 18px;
+  box-sizing: border-box;
+  height: auto;
+  align-self: stretch;
+}
+/* Inner form rhythm */
+#insBody .xform {
+  gap: 12px;
+}
+#insBody .xform label {
+  gap: 6px;
+}
+#insBody .xrow {
+  gap: 12px;
+  align-items: flex-end;
+}
+#insBody hr {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 16px 0;
+}
+#insBody .xhead {
+  margin-bottom: 14px;
+}
+#insBody .fstats {
+  margin-top: 4px;
+}
+#insBody .panel > b {
+  display: block;
+  margin-bottom: 8px;
+}
+#insBody .panel > .muted {
+  margin-bottom: 10px;
+}
+
+/* Events main tab */
+/* events styles moved below */
+
+/* Protect Insights forms from any leftover Admin (.adm) input rules */
+.admInsights input[type=checkbox],
+.admInsights input[type=radio],
+#insBody input[type=checkbox],
+#insBody input[type=radio] {
+  width: auto !important;
+  height: auto !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  margin-top: 3px;
+  padding: 0 !important;
+  flex: none !important;
+}
+.admInsights .xcheck,
+#insBody .xcheck {
+  display: flex !important;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--text) !important;
+  font-size: 13.5px !important;
+  grid-template-columns: none !important;
+}
+.admInsights .xform input:not([type=checkbox]):not([type=radio]):not([type=file]),
+.admInsights .xform select,
+.admInsights .xform textarea,
+#insBody .xform input:not([type=checkbox]):not([type=radio]):not([type=file]),
+#insBody .xform select,
+#insBody .xform textarea {
+  height: auto;
+  background: #0e1722;
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 9px 11px;
+  font: inherit;
+  font-size: 14px;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+.admInsights .fstats,
+#insBody .fstats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+.admInsights .fgrid2,
+#insBody .fgrid2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 16px;
+  align-items: stretch;
+}
+#insBody > .fgrid2 > .panel {
+  height: 100%;
+  min-height: 100%;
+}
