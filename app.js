@@ -93,7 +93,7 @@ const DEFAULT_FORM_RE=/^(HERO|STANDARD|ORDINARY|INCARNATE|ALTERED|LAND|ARIA|BAIL
 function hasDefaultForm(forms){return forms.some(it=>(it.f||[]).some(t=>DEFAULT_FORM_RE.test(String(t).replace(/^F/,'')))||DEFAULT_FORM_RE.test(String(it.label||'').replace(/ /g,'_')))}
 /* Sprite URLs: sprites/normal|shiny/gen N/<file> in the GitHub repo. */
 const spriteSrc=(stem,sh)=>genDir(stemId(stem),sh)+encodeURIComponent(stem+(sh?'.s':'')+'.icon.png').replace(/'/g,'%27');
-const spriteSrcFb=(stem,sh)=>sh?[genDir(stemId(stem),true)+encodeURIComponent(stem+'.icon.png').replace(/'/g,'%27')]:[];
+const spriteSrcFb=(stem,sh)=>[]; // no fallback: a shiny must never fall back to the base (non-.s) sprite
 // ---- Preloader: pulls every image into the browser cache in the background (current tab first) so tabs/search/picker show instantly.
 const PRELOAD=true, WARM_CONC=3;
 const WARM_SEEN=new Set(); let warmQ=[], warmRun=0;
