@@ -7,6 +7,24 @@ const SPRITE_BASE = 'https://raw.githubusercontent.com/rinfinitely/pokedex/main/
 const GEN_MAX=[151,251,386,493,649,721,809,905,1025];
 const genOf=id=>{id=+id;for(let i=0;i<GEN_MAX.length;i++)if(id<=GEN_MAX[i])return i+1;return 9};
 const genDir=(id,sh)=>`${SPRITE_BASE}/${sh?'shiny':'normal'}/gen%20${genOf(id)}/`;
+/* Subfolders inside every gen folder: sprites/<normal|shiny>/gen N/<costume|forms|mega|gigantamax|regional>/. Base sprites stay in the gen folder itself.
+   The subfolder comes from the image's category (see stemCat); regional forms (Alolan/Galarian/Hisuian/Paldean) are filed under the generation
+   that introduced the region. Every other possible location (the species' own gen folder, its forms/ folder, the gen root) is added as a fallback, so
+   a file that sits in a neighbouring folder is still found. */
+const REGION_GEN={ALOLA:7,ALOLAN:7,GALAR:8,GALARIAN:8,HISUI:8,HISUIAN:8,PALDEA:9,PALDEAN:9};
+const regionGenOf=it=>{for(const t of (it&&it.f)||[]){const m=/(ALOLA|GALAR|HISUI|PALDEA)N?/i.exec(t);if(m)return REGION_GEN[m[1].toUpperCase()]}return 0};
+function spriteDirs(stem,sh){
+ const id=stemId(stem),it=IMG.idx.get(stem)||parseStem(stem),cat=stemCat(it),root=`${SPRITE_BASE}/${sh?'shiny':'normal'}`,g=genOf(id),rg=regionGenOf(it);
+ const d=(gen,sub)=>`${root}/gen%20${gen}/${sub?sub+'/':''}`;
+ let list;
+ if(cat==='mega')list=[d(g,'mega')];
+ else if(cat==='gmax'||cat==='dmax')list=[d(g,'gigantamax')];
+ else if(cat==='costume')list=[d(g,'costume')];
+ else if(cat==='form'){list=rg?[d(rg,'regional'),d(g,'regional'),d(g,'forms'),d(rg,'forms')]:[d(g,'forms'),d(g,'regional')]}
+ else list=[];
+ if(list.length)for(const sub of ['forms','costume','regional','mega','gigantamax'])list.push(d(g,sub));   // a file filed under a neighbouring subfolder is still found
+ list.push(d(g,''));   // base sprites, and a last-resort check of the gen folder itself for any file that was dropped there
+ return [...new Set(list)]}
 const stemId=stem=>{const m=/^pm(\d+)/.exec(String(stem));return m?+m[1]:0};
 /* Shiny icon (yellow disc + white sparkles), embedded so it works everywhere, including the exported trade picture. File copy: ic_shiny.png */
 const SHINY_ICO='data:image/png;base64,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';
@@ -36,11 +54,13 @@ const cloneSprites=o=>JSON.parse(JSON.stringify(o));
 const BG_ROOT='https://raw.githubusercontent.com/rinfinitely/pokedex/main/backgrounds/';
 const BG_DIR={location:BG_ROOT+'location/',special:BG_ROOT+'special/'};
 const bgPng=f=>String(f).replace(/\.[a-z0-9]+$/i,'.png');
-const bgEnc=f=>encodeURIComponent(f).replace(/'/g,'%27');
+const bgEnc=f=>String(f).split('/').map(x=>encodeURIComponent(x).replace(/'/g,'%27')).join('/');   // per segment: nested subfolders keep their "/"
+const bgBase=f=>String(f).split('/').pop();
 /* background.json keys are the real file names: "Location/<name>.png" or "Special/<name>.png". Keys without a folder
    are old entries that have no image in the repo yet; they keep the old behaviour (kind by SPECIAL_BG, remote .webp). */
 function bgSplit(file){const m=/^(Location|Special)\/(.+)$/.exec(file);
- if(m)return {kind:m[1].toLowerCase(),image:m[2],name:m[2].replace(/\.[a-z0-9]+$/i,''),legacy:false};
+ if(m){const nested=m[2].includes('/');   // "Special/Events/Name.png": subfolders inside location/ and special/ work too
+  return {kind:m[1].toLowerCase(),image:m[2],name:bgBase(m[2]).replace(/\.[a-z0-9]+$/i,''),path:m[2].replace(/\.[a-z0-9]+$/i,''),nested,legacy:false}}
  const name=String(file).replace(/\.[a-z0-9]+$/i,'');return {kind:SPECIAL_BG.test(name)?'special':'location',image:bgPng(file),name,legacy:true}}
 let IMG={byId:new Map(),idx:new Map()}, BGJ={}, LOAD_ERR=[];
 const STEM_RE=/^pm(\d+)((?:\.[A-Za-z0-9_']+)*?)(\.s)?\.icon\.png$/;
@@ -92,8 +112,9 @@ function formStemFor(id,form,sh){const l=formStems(id,sh);if(!l.length)return nu
 const DEFAULT_FORM_RE=/^(HERO|STANDARD|ORDINARY|INCARNATE|ALTERED|LAND|ARIA|BAILE|MIDDAY|AVERAGE|SOLO|FULL_?BELLY|AMPED|ICE(_FACE)?|NOICE|PLANT|OVERCAST|WEST(_SEA)?|EAST(_SEA)?|RED_STRIPE|BLUE_STRIPE|MIDNIGHT|DUSK|DAWN|SHIELD|BLADE|TEN_PERCENT|FIFTY_PERCENT|50_PERCENT|COMPLETE|FAMILY_OF_FOUR|FAMILY_OF_THREE|TWO_SEGMENT|THREE_SEGMENT|CURVE|STRAIGHT|MALE|FEMALE|NEUTRAL|ACTIVE|STANDOUT|ROAMING|SCHOOL|SINGLE|RAINY|SNOWY|SUNNY|ORIGINAL|COMBAT|AQUA|BLAZE|COIN|BLADES|CROWNED|CROWNED_SWORD|CROWNED_SHIELD|NORMAL)$/i;
 function hasDefaultForm(forms){return forms.some(it=>(it.f||[]).some(t=>DEFAULT_FORM_RE.test(String(t).replace(/^F/,'')))||DEFAULT_FORM_RE.test(String(it.label||'').replace(/ /g,'_')))}
 /* Sprite URLs: sprites/normal|shiny/gen N/<file> in the GitHub repo. */
-const spriteSrc=(stem,sh)=>genDir(stemId(stem),sh)+encodeURIComponent(stem+(sh?'.s':'')+'.icon.png').replace(/'/g,'%27');
-const spriteSrcFb=(stem,sh)=>[]; // no fallback: a shiny must never fall back to the base (non-.s) sprite
+const spriteFile=(stem,sh)=>encodeURIComponent(stem+(sh?'.s':'')+'.icon.png').replace(/'/g,'%27');
+const spriteSrc=(stem,sh)=>spriteDirs(stem,sh)[0]+spriteFile(stem,sh);
+const spriteSrcFb=(stem,sh)=>spriteDirs(stem,sh).slice(1).map(d=>d+spriteFile(stem,sh)); // other folders only, same file name: a shiny never falls back to the base (non-.s) sprite
 // ---- Preloader: pulls every image into the browser cache in the background (current tab first) so tabs/search/picker show instantly.
 const PRELOAD=true, WARM_CONC=3;
 const WARM_SEEN=new Set(); let warmQ=[], warmRun=0;
@@ -142,9 +163,9 @@ const SPECIAL_BG=/^(10yr|9yr|24_dec|24_wildarea|25_observatory|26_pokopia|26_fes
 // background.json: { "name.webp": ["pm25.icon.png","pm25.s.icon.png",...] }  -> only those Pokemon can have that background.
 function buildBackgrounds(j){const out={location:{base:BG_DIR.location,entries:[]},special:{base:BG_DIR.special,entries:[]}},old=(j&&j._legacy)||{};
  for(const [file,list] of Object.entries(j||{})){if(file[0]==='_')continue;const b=bgSplit(file),kind=b.kind,name=b.name,A=out[kind].entries,seen=new Map();
-  const oldName=b.legacy?name:(old[file]||''),keyBase=oldName||name,label=b.legacy?titleCase(name):bgLabel(name);   // keyBase = the id saved ownership is stored under
+  const oldName=b.legacy?name:(old[file]||''),keyBase=oldName||(b.nested?b.path:name),label=b.legacy?titleCase(name):bgLabel(name);   // keyBase = the id saved ownership is stored under
   for(const f of Array.isArray(list)?list:[]){const m=STEM_RE.exec(f);if(!m)continue;const stem='pm'+m[1]+m[2];let o=seen.get(stem);if(!o){o={n:false,s:false};seen.set(stem,o)}if(m[3])o.s=true;else o.n=true}
-  const other=BG_DIR[kind==='special'?'location':'special'],remote=[other+bgEnc(b.image)].join('|');
+  const other=BG_DIR[kind==='special'?'location':'special'],remote=(b.nested?[other+bgEnc(b.image),BG_DIR[kind]+bgEnc(bgBase(b.image)),other+bgEnc(bgBase(b.image))]:[other+bgEnc(b.image)]).join('|');
   const image=b.image;if(!seen.size){A.push({image,label,key:keyBase,remote});continue}
   for(const [stem,o] of seen){const it=IMG.idx.get(stem)||parseStem(stem);A.push({pokemon:it.id,image,label,key:keyBase+'__'+stem,stem,n:o.n,s:o.s,form:it.label,remote})}}
  return out}
@@ -252,7 +273,7 @@ function bgItems(kind){const k=kind+(isShiny()?':s':':n'),bg=sprites.backgrounds
  const v=bgItemsBuild(kind);_bgCache.set(k,{bg,pk:pokemon,n:pokemon.length,e:((bg||{})[kind]||{}).entries,v});return v}
 function bgItemsBuild(kind){const cfg=(sprites.backgrounds||{})[kind]||{},base=cfg.base||'';
  const pkMap=new Map();for(const x of pokemon){const i=String(x.id);if(!pkMap.has(i))pkMap.set(i,x);const d=dbName(x);if(!pkMap.has(d))pkMap.set(d,x)}
- return withEvos(cfg.entries||[]).map(e=>{if(!e.image)return null;if(e.stem&&(isShiny()?!e.s:!e.n))return null;const img=String(e.image),url=/^(https?:|\.?\/|bg\/)/i.test(img)?img:base+(img.includes('%')?img:encodeURIComponent(img)),remote=e.remote||'';
+ return withEvos(cfg.entries||[]).map(e=>{if(!e.image)return null;if(e.stem&&(isShiny()?!e.s:!e.n))return null;const img=String(e.image),url=/^(https?:|\.?\/|bg\/)/i.test(img)?img:base+(img.includes('%')?img:bgEnc(img)),remote=e.remote||'';
   if(e.pokemon==null||e.pokemon===''){const slug=String(e.key||img).replace(/[^a-zA-Z0-9_-]+/g,'_');return {bgOnly:true,p:null,form:null,entry:{key:(isShiny()?'shiny_':'')+'bg_'+kind+'_'+slug,url,remote,label:e.label||'',sub:e.sub||'',event:e.event||'',year:e.year||''}}}
   const q=String(e.pokemon).toLowerCase(),p=pkMap.get(q);if(!p)return null;
   const slug=String(e.key||p.id+'_'+img).replace(/[^a-zA-Z0-9_-]+/g,'_');
@@ -676,7 +697,7 @@ function tCat(){if(_cat)return _cat;if(!pokemon.length||!IMG.idx.size)return nul
     add({k:`s:${sh?'shiny':'normal'}:${it.stem}`,id,p,tags:mkTags(sh,cat,legend,false),sh,v:cat==='mega'?'mega':cat==='dmax'?'dynamax':cat==='gmax'?'gigantamax':cat==='costume'?'costume':sh?'shiny':'normal',url:spriteSrc(it.stem,sh),fb:spriteSrcFb(it.stem,sh),bg:'',bgFb:[],loc:'',form:it.label,label:it.label,rank:RANK[cat]})}}}
  for(const kind of ['location','special']){const cfg=(sprites.backgrounds||{})[kind]||{},base=cfg.base||'';
   for(const e of cfg.entries||[]){if(!e.image||!e.stem)continue;const p=byId.get(e.pokemon);if(!p)continue;
-   const bg=base+encodeURIComponent(e.image),cat=stemCat(IMG.idx.get(e.stem)||parseStem(e.stem)),legend=isLeg(p.id),slug=String(e.key).replace(/[^a-zA-Z0-9_-]+/g,'_');
+   const bg=base+bgEnc(e.image),cat=stemCat(IMG.idx.get(e.stem)||parseStem(e.stem)),legend=isLeg(p.id),slug=String(e.key).replace(/[^a-zA-Z0-9_-]+/g,'_');
    for(const sh of [false,true]){if(sh?!e.s:!e.n)continue;
     add({k:`b:${kind}:${slug}${sh?':shiny':''}`,id:p.id,p,tags:mkTags(sh,cat,legend,true),sh,v:'background',url:spriteSrc(e.stem,sh),fb:spriteSrcFb(e.stem,sh),bg,bgFb:e.remote?String(e.remote).split('|'):[],loc:e.label||'',form:e.form||'',label:[e.label||'',e.form||''].filter(Boolean).join(' · '),extra:'',rank:5})}}}
  list.sort((a,b)=>a.id-b.id||a.rank-b.rank||(a.label<b.label?-1:a.label>b.label?1:0)||(+a.sh-+b.sh));
