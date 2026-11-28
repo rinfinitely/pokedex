@@ -1,115 +1,118 @@
 //* Bulbasaur *//
 pm1.icon.png
 pm1.s.icon.png
-pm1.cParty_Hat.icon.png
-pm1.cParty_Hat.s.icon.png
-pm1.cShedinja_Hat.icon.png
-pm1.cShedinja_Hat.s.icon.png
-pm1.cPikachu_Visor.icon.png
-pm1.cPikachu_Visor.s.icon.png
+pm1.fParty_Hat.icon.png
+pm1.fParty_Hat.s.icon.png
+pm1.fShedinja_Hat.icon.png
+pm1.fShedinja_Hat.s.icon.png
+pm1.fPikachu_Visor.icon.png
+pm1.fPikachu_Visor.s.icon.png
 
 //* Ivysaur *//
 pm2.icon.png
 pm2.s.icon.png
-pm2.cParty_Hat.icon.png
-pm2.cParty_Hat.s.icon.png
-pm2.cPikachu_Visor.icon.png
-pm2.cPikachu_Visor.s.icon.png
+pm2.fParty_Hat.icon.png
+pm2.fParty_Hat.s.icon.png
+pm2.fPikachu_Visor.icon.png
+pm2.fPikachu_Visor.s.icon.png
 
 //* Venusaur *//
 pm3.icon.png
 pm3.s.icon.png
-pm3.cClone.icon.png
+pm3.fClone.icon.png
+pm3.fClone.s.icon.png
 pm3.fGigantamax.icon.png
 pm3.fGigantamax.s.icon.png
 pm3.fMega.icon.png
 pm3.fMega.s.icon.png
-pm3.cParty_Hat.icon.png
-pm3.cParty_Hat.s.icon.png
-pm3.cPikachu_Visor.icon.png
-pm3.cPikachu_Visor.s.icon.png
+pm3.fParty_Hat.icon.png
+pm3.fParty_Hat.s.icon.png
+pm3.fPikachu_Visor.icon.png
+pm3.fPikachu_Visor.s.icon.png
 
 //* Charmander *//
 pm4.icon.png
 pm4.s.icon.png
-pm4.cCubone_Hat.icon.png
-pm4.cCubone_Hat.s.icon.png
-pm4.cFriede's_Goggles.icon.png
-pm4.cFriede's_Goggles.s.icon.png
-pm4.cParty_Hat.icon.png
-pm4.cParty_Hat.s.icon.png
-pm4.cPikachu_Visor.icon.png
-pm4.cPikachu_Visor.s.icon.png
+pm4.fCubone_Hat.icon.png
+pm4.fCubone_Hat.s.icon.png
+pm4.fFriede's_Goggles.icon.png
+pm4.fFriede's_Goggles.s.icon.png
+pm4.fParty_Hat.icon.png
+pm4.fParty_Hat.s.icon.png
+pm4.fPikachu_Visor.icon.png
+pm4.fPikachu_Visor.s.icon.png
 
 //* Charmeleon *//
 pm5.icon.png
 pm5.s.icon.png
-pm5.cFriede's_Goggles.icon.png
-pm5.cFriede's_Goggles.s.icon.png
-pm5.cParty_Hat.icon.png
-pm5.cParty_Hat.s.icon.png
-pm5.cPikachu_Visor.icon.png
-pm5.cPikachu_Visor.s.icon.png
+pm5.fFriede's_Goggles.icon.png
+pm5.fFriede's_Goggles.s.icon.png
+pm5.fParty_Hat.icon.png
+pm5.fParty_Hat.s.icon.png
+pm5.fPikachu_Visor.icon.png
+pm5.fPikachu_Visor.s.icon.png
 
 //* Charizard *//
 pm6.icon.png
 pm6.s.icon.png
-pm6.cClone.icon.png
-pm6.cFriede's_Goggles.icon.png
-pm6.cFriede's_Goggles.s.icon.png
+pm6.fClone.icon.png
+pm6.fClone.s.icon.png
+pm6.fFriede's_Goggles.icon.png
+pm6.fFriede's_Goggles.s.icon.png
 pm6.fGigantamax.icon.png
 pm6.fGigantamax.s.icon.png
 pm6.fMega_X.icon.png
 pm6.fMega_X.s.icon.png
 pm6.fMega_Y.icon.png
 pm6.fMega_Y.s.icon.png
-pm6.cParty_Hat.icon.png
-pm6.cParty_Hat.s.icon.png
-pm6.cPikachu_Visor.icon.png
-pm6.cPikachu_Visor.s.icon.png
+pm6.fParty_Hat.icon.png
+pm6.fParty_Hat.s.icon.png
+pm6.fPikachu_Visor.icon.png
+pm6.fPikachu_Visor.s.icon.png
 
 //* Squirtle *//
 pm7.icon.png
 pm7.s.icon.png
-pm7.cParty_Hat.icon.png
-pm7.cParty_Hat.s.icon.png
-pm7.cSunglasses.icon.png
-pm7.cSunglasses.s.icon.png
-pm7.cPikachu_Visor.icon.png
-pm7.cPikachu_Visor.s.icon.png
-pm7.cYamask_Hat.icon.png
-pm7.cYamask_Hat.s.icon.png
+pm7.fParty_Hat.icon.png
+pm7.fParty_Hat.s.icon.png
+pm7.fSunglasses.icon.png
+pm7.fSunglasses.s.icon.png
+pm7.fPikachu_Visor.icon.png
+pm7.fPikachu_Visor.s.icon.png
+pm7.fYamask_Hat.icon.png
+pm7.fYamask_Hat.s.icon.png
 
 //* Wartortle *//
 pm8.icon.png
 pm8.s.icon.png
-pm8.cParty_Hat.icon.png
-pm8.cParty_Hat.s.icon.png
-pm8.cSunglasses.icon.png
-pm8.cSunglasses.s.icon.png
-pm8.cPikachu_Visor.icon.png
-pm8.cPikachu_Visor.s.icon.png
+pm8.fParty_Hat.icon.png
+pm8.fParty_Hat.s.icon.png
+pm8.fSunglasses.icon.png
+pm8.fSunglasses.s.icon.png
+pm8.fPikachu_Visor.icon.png
+pm8.fPikachu_Visor.s.icon.png
 
 //* Blastoise *//
 pm9.icon.png
 pm9.s.icon.png
-pm9.cClone.icon.png
+pm9.fClone.icon.png
+pm9.fClone.s.icon.png
 pm9.fGigantamax.icon.png
 pm9.fGigantamax.s.icon.png
 pm9.fMega.icon.png
 pm9.fMega.s.icon.png
-pm9.cParty_Hat.icon.png
-pm9.cParty_Hat.s.icon.png
-pm9.cSunglasses.icon.png
-pm9.cSunglasses.s.icon.png
-pm9.cPikachu_Visor.icon.png
-pm9.cPikachu_Visor.s.icon.png
+pm9.fParty_Hat.icon.png
+pm9.fParty_Hat.s.icon.png
+pm9.fSunglasses.icon.png
+pm9.fSunglasses.s.icon.png
+pm9.fPikachu_Visor.icon.png
+pm9.fPikachu_Visor.s.icon.png
 
 //* Caterpie *//
 pm10.icon.png
 pm10.s.icon.png
-pm10.cPokeball_Hat.icon.png
-pm10.cPokeball_Hat.s.icon.png
+pm10.fPokeball_Hat.icon.png
+pm10.fPokeball_Hat.s.icon.png
 
 //* Metapod *//
 pm11.icon.png
@@ -118,8 +121,8 @@ pm11.s.icon.png
 //* Butterfree *//
 pm12.icon.png
 pm12.s.icon.png
-pm12.cFashion.icon.png
-pm12.cFashion.s.icon.png
+pm12.fFashion.icon.png
+pm12.fFashion.s.icon.png
 pm12.fGigantamax.icon.png
 pm12.fGigantamax.s.icon.png
 
@@ -162,8 +165,8 @@ pm20.icon.png
 pm20.s.icon.png
 pm20.fAlolan.icon.png
 pm20.fAlolan.s.icon.png
-pm20.cParty_Hat.icon.png
-pm20.cParty_Hat.s.icon.png
+pm20.fParty_Hat.icon.png
+pm20.fParty_Hat.s.icon.png
 
 //* Spearow *//
 pm21.icon.png
@@ -184,252 +187,252 @@ pm24.s.icon.png
 //* Pikachu *//
 pm25.icon.png
 pm25.s.icon.png
-pm25.cAkari_S_Kerchief.icon.png
-pm25.cAkari_S_Kerchief.s.icon.png
-pm25.cAmethyst_Crown.icon.png
-pm25.cAmethyst_Crown.s.icon.png
-pm25.cAquamarine_Crown.icon.png
-pm25.cAquamarine_Crown.s.icon.png
-pm25.cAstronaut.icon.png
-pm25.cAstronaut.s.icon.png
-pm25.cBaseball_Shirt.icon.png
-pm25.cBaseball_Shirt.s.icon.png
-pm25.cBatik_Shirt.icon.png
-pm25.cBatik_Shirt.s.icon.png
-pm25.cBeanie.icon.png
-pm25.cBeanie.s.icon.png
-pm25.cBlue_Monocle.icon.png
-pm25.cBlue_Monocle.s.icon.png
-pm25.cBlue_Pok_Xciting.icon.png
-pm25.cBlue_Pok_Xciting.s.icon.png
-pm25.cBlue_Shirt.icon.png
-pm25.cBlue_Shirt.s.icon.png
-pm25.cBrendan_S_Hat.icon.png
-pm25.cBrendan_S_Hat.s.icon.png
-pm25.cCake_Hat.icon.png
-pm25.cCake_Hat.s.icon.png
-pm25.cCalem_S_Hat.icon.png
-pm25.cCalem_S_Hat.s.icon.png
-pm25.cCap_S_Hat.icon.png
-pm25.cCap_S_Hat.s.icon.png
-pm25.cCharizard_Hat.icon.png
-pm25.cCharizard_Hat.s.icon.png
-pm25.cCherry_Blossom.icon.png
-pm25.cCherry_Blossom.s.icon.png
-pm25.cClone.icon.png
-pm25.cClone.s.icon.png
-pm25.cDapper_Blue.icon.png
-pm25.cDapper_Blue.s.icon.png
-pm25.cDapper_Red.icon.png
-pm25.cDapper_Red.s.icon.png
-pm25.cDapper_Yellow.icon.png
-pm25.cDapper_Yellow.s.icon.png
-pm25.cDawn_S_Hat.icon.png
-pm25.cDawn_S_Hat.s.icon.png
-pm25.cDetective_Hat.icon.png
-pm25.cDetective_Hat.s.icon.png
-pm25.cDetective_Hat_2023.icon.png
-pm25.cDetective_Hat_2023.s.icon.png
-pm25.cEthans_Hat.icon.png
-pm25.cEthans_Hat.s.icon.png
-pm25.cExplorer.icon.png
-pm25.cExplorer.s.icon.png
-pm25.cFlower_Crown.icon.png
-pm25.cFlower_Crown.s.icon.png
-pm25.cFlower_Hat.icon.png
-pm25.cFlower_Hat.s.icon.png
-pm25.cFlying.icon.png
-pm25.cFlying.s.icon.png
-pm25.cFlying_5th_Anniversary.icon.png
-pm25.cFlying_5th_Anniversary.s.icon.png
-pm25.cFlying_Green.icon.png
-pm25.cFlying_Green.s.icon.png
-pm25.cFlying_Okinawa.icon.png
-pm25.cFlying_Okinawa.s.icon.png
-pm25.cFlying_Orange.icon.png
-pm25.cFlying_Orange.s.icon.png
-pm25.cFlying_Purple.icon.png
-pm25.cFlying_Purple.s.icon.png
-pm25.cFlying_Red.icon.png
-pm25.cFlying_Red.s.icon.png
-pm25.cFossil.icon.png
-pm25.cFossil.s.icon.png
-pm25.cFragment_Hat.icon.png
-pm25.cFragment_Hat.s.icon.png
+pm25.fAkari_S_Kerchief.icon.png
+pm25.fAkari_S_Kerchief.s.icon.png
+pm25.fAmethyst_Crown.icon.png
+pm25.fAmethyst_Crown.s.icon.png
+pm25.fAquamarine_Crown.icon.png
+pm25.fAquamarine_Crown.s.icon.png
+pm25.fAstronaut.icon.png
+pm25.fAstronaut.s.icon.png
+pm25.fBaseball_Shirt.icon.png
+pm25.fBaseball_Shirt.s.icon.png
+pm25.fBatik_Shirt.icon.png
+pm25.fBatik_Shirt.s.icon.png
+pm25.fBeanie.icon.png
+pm25.fBeanie.s.icon.png
+pm25.fBlue_Monocle.icon.png
+pm25.fBlue_Monocle.s.icon.png
+pm25.fBlue_Pok_Xciting.icon.png
+pm25.fBlue_Pok_Xciting.s.icon.png
+pm25.fBlue_Shirt.icon.png
+pm25.fBlue_Shirt.s.icon.png
+pm25.fBrendan_S_Hat.icon.png
+pm25.fBrendan_S_Hat.s.icon.png
+pm25.fCake_Hat.icon.png
+pm25.fCake_Hat.s.icon.png
+pm25.fCalem_S_Hat.icon.png
+pm25.fCalem_S_Hat.s.icon.png
+pm25.fCap_S_Hat.icon.png
+pm25.fCap_S_Hat.s.icon.png
+pm25.fCharizard_Hat.icon.png
+pm25.fCharizard_Hat.s.icon.png
+pm25.fCherry_Blossom.icon.png
+pm25.fCherry_Blossom.s.icon.png
+pm25.fClone.icon.png
+pm25.fClone.s.icon.png
+pm25.fDapper_Blue.icon.png
+pm25.fDapper_Blue.s.icon.png
+pm25.fDapper_Red.icon.png
+pm25.fDapper_Red.s.icon.png
+pm25.fDapper_Yellow.icon.png
+pm25.fDapper_Yellow.s.icon.png
+pm25.fDawn_S_Hat.icon.png
+pm25.fDawn_S_Hat.s.icon.png
+pm25.fDetective_Hat.icon.png
+pm25.fDetective_Hat.s.icon.png
+pm25.fDetective_Hat_2023.icon.png
+pm25.fDetective_Hat_2023.s.icon.png
+pm25.fEthans_Hat.icon.png
+pm25.fEthans_Hat.s.icon.png
+pm25.fExplorer.icon.png
+pm25.fExplorer.s.icon.png
+pm25.fFlower_Crown.icon.png
+pm25.fFlower_Crown.s.icon.png
+pm25.fFlower_Hat.icon.png
+pm25.fFlower_Hat.s.icon.png
+pm25.fFlying.icon.png
+pm25.fFlying.s.icon.png
+pm25.fFlying_5th_Anniversary.icon.png
+pm25.fFlying_5th_Anniversary.s.icon.png
+pm25.fFlying_Green.icon.png
+pm25.fFlying_Green.s.icon.png
+pm25.fFlying_Okinawa.icon.png
+pm25.fFlying_Okinawa.s.icon.png
+pm25.fFlying_Orange.icon.png
+pm25.fFlying_Orange.s.icon.png
+pm25.fFlying_Purple.icon.png
+pm25.fFlying_Purple.s.icon.png
+pm25.fFlying_Red.icon.png
+pm25.fFlying_Red.s.icon.png
+pm25.fFossil.icon.png
+pm25.fFossil.s.icon.png
+pm25.fFragment_Hat.icon.png
+pm25.fFragment_Hat.s.icon.png
 pm25.fGigantamax.icon.png
 pm25.fGigantamax.s.icon.png
-pm25.cGreen_Shirt.icon.png
-pm25.cGreen_Shirt.s.icon.png
-pm25.cHalloween_2026.icon.png
-pm25.cHalloween_2026.s.icon.png
-pm25.cHalloween_Hat.icon.png
-pm25.cHalloween_Hat.s.icon.png
-pm25.cHilbert_S_Hat.icon.png
-pm25.cHilbert_S_Hat.s.icon.png
-pm25.cHilda_S_Hat.icon.png
-pm25.cHilda_S_Hat.s.icon.png
-pm25.cHoliday_2023.icon.png
-pm25.cHoliday_2023.s.icon.png
-pm25.cIndonesia_Football.icon.png
-pm25.cIndonesia_Football.s.icon.png
-pm25.cInstinct_Cap.icon.png
-pm25.cInstinct_Cap.s.icon.png
-pm25.cKariyushi_Shirt.icon.png
-pm25.cKariyushi_Shirt.s.icon.png
-pm25.cKurta.icon.png
-pm25.cKurta.s.icon.png
-pm25.cLeaf_S_Hat.icon.png
-pm25.cLeaf_S_Hat.s.icon.png
-pm25.cLibre.icon.png
-pm25.cLibre.s.icon.png
-pm25.cLucario_Hat.icon.png
-pm25.cLucario_Hat.s.icon.png
-pm25.cLucas_S_Hat.icon.png
-pm25.cLucas_S_Hat.s.icon.png
-pm25.cLyra_S_Hat.icon.png
-pm25.cLyra_S_Hat.s.icon.png
-pm25.cMalachite_Crown.icon.png
-pm25.cMalachite_Crown.s.icon.png
-pm25.cMarathon.icon.png
-pm25.cMarathon.s.icon.png
-pm25.cMay_S_Bow.icon.png
-pm25.cMay_S_Bow.s.icon.png
-pm25.cMeloetta_Hat.icon.png
-pm25.cMeloetta_Hat.s.icon.png
-pm25.cMimikyu_Costume.icon.png
-pm25.cMimikyu_Costume.s.icon.png
-pm25.cMoon_Crown.icon.png
-pm25.cMoon_Crown.s.icon.png
-pm25.cMystic_Cap.icon.png
-pm25.cMystic_Cap.s.icon.png
-pm25.cNate_S_Visor.icon.png
-pm25.cNate_S_Visor.s.icon.png
-pm25.cNew_Year_S_Hat.icon.png
-pm25.cNew_Year_S_Hat.s.icon.png
-pm25.cOrange_Hanbok.icon.png
-pm25.cOrange_Hanbok.s.icon.png
-pm25.cOriginal_Cap.icon.png
-pm25.cOriginal_Cap.s.icon.png
-pm25.cParty_Hat.icon.png
-pm25.cParty_Hat.s.icon.png
-pm25.cParty_Top_Hat.icon.png
-pm25.cParty_Top_Hat.s.icon.png
-pm25.cPh_D.icon.png
-pm25.cPh_D.s.icon.png
-pm25.cPink_Pok_Xciting.icon.png
-pm25.cPink_Pok_Xciting.s.icon.png
-pm25.cPok_Monxp.icon.png
-pm25.cPok_Monxp.s.icon.png
-pm25.cPop_Star.icon.png
-pm25.cPop_Star.s.icon.png
-pm25.cProfessor_Willow_S_Assistant.icon.png
-pm25.cProfessor_Willow_S_Assistant.s.icon.png
-pm25.cPurple_Shirt.icon.png
-pm25.cPurple_Shirt.s.icon.png
-pm25.cPyrite_Crown.icon.png
-pm25.cPyrite_Crown.s.icon.png
-pm25.cQuartz_Crown.icon.png
-pm25.cQuartz_Crown.s.icon.png
-pm25.cRayquaza_Hat.icon.png
-pm25.cRayquaza_Hat.s.icon.png
-pm25.cRed_Monocle.icon.png
-pm25.cRed_Monocle.s.icon.png
-pm25.cRed_Party_Hat.icon.png
-pm25.cRed_Party_Hat.s.icon.png
-pm25.cRed_Pok_Xciting.icon.png
-pm25.cRed_Pok_Xciting.s.icon.png
-pm25.cRed_S_Hat.icon.png
-pm25.cRed_S_Hat.s.icon.png
-pm25.cRei_S_Cap.icon.png
-pm25.cRei_S_Cap.s.icon.png
-pm25.cRock_Star.icon.png
-pm25.cRock_Star.s.icon.png
-pm25.cRosa_S_Visor.icon.png
-pm25.cRosa_S_Visor.s.icon.png
-pm25.cSafari_Hat.icon.png
-pm25.cSafari_Hat.s.icon.png
-pm25.cSanta_Hat.icon.png
-pm25.cSanta_Hat.s.icon.png
-pm25.cSaree.icon.png
-pm25.cSaree.s.icon.png
-pm25.cSerena_S_Hat.icon.png
-pm25.cSerena_S_Hat.s.icon.png
-pm25.cShaymin_Flower.icon.png
-pm25.cShaymin_Flower.s.icon.png
-pm25.cShaymin_Scarf.icon.png
-pm25.cShaymin_Scarf.s.icon.png
-pm25.cStraw_Hat.icon.png
-pm25.cStraw_Hat.s.icon.png
-pm25.cSummer_Hat.icon.png
-pm25.cSummer_Hat.s.icon.png
-pm25.cSun_Crown.icon.png
-pm25.cSun_Crown.s.icon.png
-pm25.cTcg_Hat.icon.png
-pm25.cTcg_Hat.s.icon.png
-pm25.cTrick_And_Treats.icon.png
-pm25.cTrick_And_Treats.s.icon.png
-pm25.cTurquoise_Pok_Xciting.icon.png
-pm25.cTurquoise_Pok_Xciting.s.icon.png
-pm25.cUmbreon_Hat.icon.png
-pm25.cUmbreon_Hat.s.icon.png
-pm25.cValor_Cap.icon.png
-pm25.cValor_Cap.s.icon.png
-pm25.cWinter_Carnival_Outfit.icon.png
-pm25.cWinter_Carnival_Outfit.s.icon.png
-pm25.cWitch_Hat.icon.png
-pm25.cWitch_Hat.s.icon.png
-pm25.cWorld_Cap.icon.png
-pm25.cWorld_Cap.s.icon.png
-pm25.cWorld_Championships_2022.icon.png
-pm25.cWorld_Championships_2022.s.icon.png
-pm25.cWorld_Championships_2023.icon.png
-pm25.cWorld_Championships_2023.s.icon.png
-pm25.cWorld_Championships_2024.icon.png
-pm25.cWorld_Championships_2024.s.icon.png
-pm25.cWorld_Championships_2025.icon.png
-pm25.cWorld_Championships_2025.s.icon.png
-pm25.cWorld_Championships_2026.icon.png
-pm25.cWorld_Championships_2026.s.icon.png
-pm25.cYellow_Monocle.icon.png
-pm25.cYellow_Monocle.s.icon.png
+pm25.fGreen_Shirt.icon.png
+pm25.fGreen_Shirt.s.icon.png
+pm25.fHalloween_2026.icon.png
+pm25.fHalloween_2026.s.icon.png
+pm25.fHalloween_Hat.icon.png
+pm25.fHalloween_Hat.s.icon.png
+pm25.fHilbert_S_Hat.icon.png
+pm25.fHilbert_S_Hat.s.icon.png
+pm25.fHilda_S_Hat.icon.png
+pm25.fHilda_S_Hat.s.icon.png
+pm25.fHoliday_2023.icon.png
+pm25.fHoliday_2023.s.icon.png
+pm25.fIndonesia_Football.icon.png
+pm25.fIndonesia_Football.s.icon.png
+pm25.fInstinct_Cap.icon.png
+pm25.fInstinct_Cap.s.icon.png
+pm25.fKariyushi_Shirt.icon.png
+pm25.fKariyushi_Shirt.s.icon.png
+pm25.fKurta.icon.png
+pm25.fKurta.s.icon.png
+pm25.fLeaf_S_Hat.icon.png
+pm25.fLeaf_S_Hat.s.icon.png
+pm25.fLibre.icon.png
+pm25.fLibre.s.icon.png
+pm25.fLucario_Hat.icon.png
+pm25.fLucario_Hat.s.icon.png
+pm25.fLucas_S_Hat.icon.png
+pm25.fLucas_S_Hat.s.icon.png
+pm25.fLyra_S_Hat.icon.png
+pm25.fLyra_S_Hat.s.icon.png
+pm25.fMalachite_Crown.icon.png
+pm25.fMalachite_Crown.s.icon.png
+pm25.fMarathon.icon.png
+pm25.fMarathon.s.icon.png
+pm25.fMay_S_Bow.icon.png
+pm25.fMay_S_Bow.s.icon.png
+pm25.fMeloetta_Hat.icon.png
+pm25.fMeloetta_Hat.s.icon.png
+pm25.fMimikyu_Costume.icon.png
+pm25.fMimikyu_Costume.s.icon.png
+pm25.fMoon_Crown.icon.png
+pm25.fMoon_Crown.s.icon.png
+pm25.fMystic_Cap.icon.png
+pm25.fMystic_Cap.s.icon.png
+pm25.fNate_S_Visor.icon.png
+pm25.fNate_S_Visor.s.icon.png
+pm25.fNew_Year_S_Hat.icon.png
+pm25.fNew_Year_S_Hat.s.icon.png
+pm25.fOrange_Hanbok.icon.png
+pm25.fOrange_Hanbok.s.icon.png
+pm25.fOriginal_Cap.icon.png
+pm25.fOriginal_Cap.s.icon.png
+pm25.fParty_Hat.icon.png
+pm25.fParty_Hat.s.icon.png
+pm25.fParty_Top_Hat.icon.png
+pm25.fParty_Top_Hat.s.icon.png
+pm25.fPh_D.icon.png
+pm25.fPh_D.s.icon.png
+pm25.fPink_Pok_Xciting.icon.png
+pm25.fPink_Pok_Xciting.s.icon.png
+pm25.fPok_Monxp.icon.png
+pm25.fPok_Monxp.s.icon.png
+pm25.fPop_Star.icon.png
+pm25.fPop_Star.s.icon.png
+pm25.fProfessor_Willow_S_Assistant.icon.png
+pm25.fProfessor_Willow_S_Assistant.s.icon.png
+pm25.fPurple_Shirt.icon.png
+pm25.fPurple_Shirt.s.icon.png
+pm25.fPyrite_Crown.icon.png
+pm25.fPyrite_Crown.s.icon.png
+pm25.fQuartz_Crown.icon.png
+pm25.fQuartz_Crown.s.icon.png
+pm25.fRayquaza_Hat.icon.png
+pm25.fRayquaza_Hat.s.icon.png
+pm25.fRed_Monocle.icon.png
+pm25.fRed_Monocle.s.icon.png
+pm25.fRed_Party_Hat.icon.png
+pm25.fRed_Party_Hat.s.icon.png
+pm25.fRed_Pok_Xciting.icon.png
+pm25.fRed_Pok_Xciting.s.icon.png
+pm25.fRed_S_Hat.icon.png
+pm25.fRed_S_Hat.s.icon.png
+pm25.fRei_S_Cap.icon.png
+pm25.fRei_S_Cap.s.icon.png
+pm25.fRock_Star.icon.png
+pm25.fRock_Star.s.icon.png
+pm25.fRosa_S_Visor.icon.png
+pm25.fRosa_S_Visor.s.icon.png
+pm25.fSafari_Hat.icon.png
+pm25.fSafari_Hat.s.icon.png
+pm25.fSanta_Hat.icon.png
+pm25.fSanta_Hat.s.icon.png
+pm25.fSaree.icon.png
+pm25.fSaree.s.icon.png
+pm25.fSerena_S_Hat.icon.png
+pm25.fSerena_S_Hat.s.icon.png
+pm25.fShaymin_Flower.icon.png
+pm25.fShaymin_Flower.s.icon.png
+pm25.fShaymin_Scarf.icon.png
+pm25.fShaymin_Scarf.s.icon.png
+pm25.fStraw_Hat.icon.png
+pm25.fStraw_Hat.s.icon.png
+pm25.fSummer_Hat.icon.png
+pm25.fSummer_Hat.s.icon.png
+pm25.fSun_Crown.icon.png
+pm25.fSun_Crown.s.icon.png
+pm25.fTcg_Hat.icon.png
+pm25.fTcg_Hat.s.icon.png
+pm25.fTrick_And_Treats.icon.png
+pm25.fTrick_And_Treats.s.icon.png
+pm25.fTurquoise_Pok_Xciting.icon.png
+pm25.fTurquoise_Pok_Xciting.s.icon.png
+pm25.fUmbreon_Hat.icon.png
+pm25.fUmbreon_Hat.s.icon.png
+pm25.fValor_Cap.icon.png
+pm25.fValor_Cap.s.icon.png
+pm25.fWinter_Carnival_Outfit.icon.png
+pm25.fWinter_Carnival_Outfit.s.icon.png
+pm25.fWitch_Hat.icon.png
+pm25.fWitch_Hat.s.icon.png
+pm25.fWorld_Cap.icon.png
+pm25.fWorld_Cap.s.icon.png
+pm25.fWorld_Championships_2022.icon.png
+pm25.fWorld_Championships_2022.s.icon.png
+pm25.fWorld_Championships_2023.icon.png
+pm25.fWorld_Championships_2023.s.icon.png
+pm25.fWorld_Championships_2024.icon.png
+pm25.fWorld_Championships_2024.s.icon.png
+pm25.fWorld_Championships_2025.icon.png
+pm25.fWorld_Championships_2025.s.icon.png
+pm25.fWorld_Championships_2026.icon.png
+pm25.fWorld_Championships_2026.s.icon.png
+pm25.fYellow_Monocle.icon.png
+pm25.fYellow_Monocle.s.icon.png
 
 //* Raichu *//
 pm26.icon.png
 pm26.s.icon.png
-pm26.fAlolan.icon.png
-pm26.fAlolan.s.icon.png
-pm26.cBeanie.icon.png
-pm26.cBeanie.s.icon.png
-pm26.cCherry_Blossom.icon.png
-pm26.cCherry_Blossom.s.icon.png
-pm26.cDetective_Hat.icon.png
-pm26.cDetective_Hat.s.icon.png
-pm26.cDetective_Hat_2023.icon.png
-pm26.cDetective_Hat_2023.s.icon.png
-pm26.cFlower_Crown.icon.png
-pm26.cFlower_Crown.s.icon.png
-pm26.cFragment_Hat.icon.png
-pm26.cFragment_Hat.s.icon.png
-pm26.cHoliday_2023.icon.png
-pm26.cHoliday_2023.s.icon.png
+pm26.fAlola.icon.png
+pm26.fAlola.s.icon.png
+pm26.fBeanie.icon.png
+pm26.fBeanie.s.icon.png
+pm26.fCherry_Blossom.icon.png
+pm26.fCherry_Blossom.s.icon.png
+pm26.fDetective_Hat.icon.png
+pm26.fDetective_Hat.s.icon.png
+pm26.fDetective_Hat_2023.icon.png
+pm26.fDetective_Hat_2023.s.icon.png
+pm26.fFlower_Crown.icon.png
+pm26.fFlower_Crown.s.icon.png
+pm26.fFragment_Hat.icon.png
+pm26.fFragment_Hat.s.icon.png
+pm26.fHoliday_2023.icon.png
+pm26.fHoliday_2023.s.icon.png
 pm26.fMega_X.icon.png
 pm26.fMega_X.s.icon.png
 pm26.fMega_Y.icon.png
 pm26.fMega_Y.s.icon.png
-pm26.cNew_Year_S_Hat.icon.png
-pm26.cNew_Year_S_Hat.s.icon.png
-pm26.cOriginal_Cap.icon.png
-pm26.cOriginal_Cap.s.icon.png
-pm26.cParty_Hat.icon.png
-pm26.cParty_Hat.s.icon.png
-pm26.cSanta_Hat.icon.png
-pm26.cSanta_Hat.s.icon.png
-pm26.cSummer_Hat.icon.png
-pm26.cSummer_Hat.s.icon.png
-pm26.cWitch_Hat.icon.png
-pm26.cWitch_Hat.s.icon.png
-pm26.cWorld_Cap.icon.png
-pm26.cWorld_Cap.s.icon.png
+pm26.fNew_Year_S_Hat.icon.png
+pm26.fNew_Year_S_Hat.s.icon.png
+pm26.fOriginal_Cap.icon.png
+pm26.fOriginal_Cap.s.icon.png
+pm26.fParty_Hat.icon.png
+pm26.fParty_Hat.s.icon.png
+pm26.fSanta_Hat.icon.png
+pm26.fSanta_Hat.s.icon.png
+pm26.fSummer_Hat.icon.png
+pm26.fSummer_Hat.s.icon.png
+pm26.fWitch_Hat.icon.png
+pm26.fWitch_Hat.s.icon.png
+pm26.fWorld_Cap.icon.png
+pm26.fWorld_Cap.s.icon.png
 
 //* Sandshrew *//
 pm27.icon.png
@@ -454,8 +457,8 @@ pm30.s.icon.png
 //* Nidoqueen *//
 pm31.icon.png
 pm31.s.icon.png
-pm31.cCrown.icon.png
-pm31.cCrown.s.icon.png
+pm31.fCrown.icon.png
+pm31.fCrown.s.icon.png
 
 //* Nidoran♂ *//
 pm32.icon.png
@@ -464,14 +467,14 @@ pm32.s.icon.png
 //* Nidorino *//
 pm33.icon.png
 pm33.s.icon.png
-pm33.cParty_Hat.icon.png
-pm33.cParty_Hat.s.icon.png
+pm33.fParty_Hat.icon.png
+pm33.fParty_Hat.s.icon.png
 
 //* Nidoking *//
 pm34.icon.png
 pm34.s.icon.png
-pm34.cCrown.icon.png
-pm34.cCrown.s.icon.png
+pm34.fCrown.icon.png
+pm34.fCrown.s.icon.png
 
 //* Clefairy *//
 pm35.icon.png
@@ -488,40 +491,40 @@ pm37.icon.png
 pm37.s.icon.png
 pm37.fAlolan.icon.png
 pm37.fAlolan.s.icon.png
-pm37.cSpooky_Festival.icon.png
-pm37.cSpooky_Festival.s.icon.png
+pm37.fSpooky_Festival.icon.png
+pm37.fSpooky_Festival.s.icon.png
 
 //* Ninetales *//
 pm38.icon.png
 pm38.s.icon.png
 pm38.fAlolan.icon.png
 pm38.fAlolan.s.icon.png
-pm38.cSpooky_Festival.icon.png
-pm38.cSpooky_Festival.s.icon.png
+pm38.fSpooky_Festival.icon.png
+pm38.fSpooky_Festival.s.icon.png
 
 //* Jigglypuff *//
 pm39.icon.png
 pm39.s.icon.png
-pm39.cRibbon.icon.png
-pm39.cRibbon.s.icon.png
+pm39.fRibbon.icon.png
+pm39.fRibbon.s.icon.png
 
 //* Wigglytuff *//
 pm40.icon.png
 pm40.s.icon.png
-pm40.cRibbon.icon.png
-pm40.cRibbon.s.icon.png
+pm40.fRibbon.icon.png
+pm40.fRibbon.s.icon.png
 
 //* Zubat *//
 pm41.icon.png
 pm41.s.icon.png
-pm41.cTop_Hat.icon.png
-pm41.cTop_Hat.s.icon.png
+pm41.fTop_Hat.icon.png
+pm41.fTop_Hat.s.icon.png
 
 //* Golbat *//
 pm42.icon.png
 pm42.s.icon.png
-pm42.cTop_Hat.icon.png
-pm42.cTop_Hat.s.icon.png
+pm42.fTop_Hat.icon.png
+pm42.fTop_Hat.s.icon.png
 
 //* Oddish *//
 pm43.icon.png
@@ -556,16 +559,16 @@ pm50.icon.png
 pm50.s.icon.png
 pm50.fAlolan.icon.png
 pm50.fAlolan.s.icon.png
-pm50.cFashion.icon.png
-pm50.cFashion.s.icon.png
+pm50.fFashion.icon.png
+pm50.fFashion.s.icon.png
 
 //* Dugtrio *//
 pm51.icon.png
 pm51.s.icon.png
 pm51.fAlolan.icon.png
 pm51.fAlolan.s.icon.png
-pm51.cFashion.icon.png
-pm51.cFashion.s.icon.png
+pm51.fFashion.icon.png
+pm51.fFashion.s.icon.png
 
 //* Meowth *//
 pm52.icon.png
@@ -586,16 +589,16 @@ pm53.fAlolan.s.icon.png
 //* Psyduck *//
 pm54.icon.png
 pm54.s.icon.png
-pm54.cChristmas.icon.png
-pm54.cChristmas.s.icon.png
-pm54.cFloatie.icon.png
-pm54.cFloatie.s.icon.png
+pm54.fChristmas.icon.png
+pm54.fChristmas.s.icon.png
+pm54.fFloatie.icon.png
+pm54.fFloatie.s.icon.png
 
 //* Golduck *//
 pm55.icon.png
 pm55.s.icon.png
-pm55.cChristmas.icon.png
-pm55.cChristmas.s.icon.png
+pm55.fChristmas.icon.png
+pm55.fChristmas.s.icon.png
 
 //* Mankey *//
 pm56.icon.png
@@ -656,8 +659,8 @@ pm68.icon.png
 pm68.s.icon.png
 pm68.fGigantamax.icon.png
 pm68.fGigantamax.s.icon.png
-pm68.cModern_Jacket.icon.png
-pm68.cModern_Jacket.s.icon.png
+pm68.fModern_Jacket.icon.png
+pm68.fModern_Jacket.s.icon.png
 
 //* Bellsprout *//
 pm69.icon.png
@@ -702,30 +705,30 @@ pm76.fAlolan.s.icon.png
 //* Ponyta *//
 pm77.icon.png
 pm77.s.icon.png
-pm77.cCandela_Themed.icon.png
-pm77.cCandela_Themed.s.icon.png
+pm77.fCandela_Themed.icon.png
+pm77.fCandela_Themed.s.icon.png
 pm77.fGalarian.icon.png
 pm77.fGalarian.s.icon.png
-pm77.cMeloetta_Hat_Galarian.icon.png
-pm77.cMeloetta_Hat_Galarian.s.icon.png
+pm77.fMeloetta_Hat_Galarian.icon.png
+pm77.fMeloetta_Hat_Galarian.s.icon.png
 
 //* Rapidash *//
 pm78.icon.png
 pm78.s.icon.png
-pm78.cCandela_Themed.icon.png
-pm78.cCandela_Themed.s.icon.png
+pm78.fCandela_Themed.icon.png
+pm78.fCandela_Themed.s.icon.png
 pm78.fGalarian.icon.png
 pm78.fGalarian.s.icon.png
 
 //* Slowpoke *//
 pm79.icon.png
 pm79.s.icon.png
-pm79.cDetective_Hat.icon.png
-pm79.cDetective_Hat.s.icon.png
+pm79.fDetective_Hat.icon.png
+pm79.fDetective_Hat.s.icon.png
 pm79.fGalarian.icon.png
 pm79.fGalarian.s.icon.png
-pm79.cNew_Year's.icon.png
-pm79.cNew_Year's.s.icon.png
+pm79.fNew_Year's.icon.png
+pm79.fNew_Year's.s.icon.png
 
 //* Slowbro *//
 pm80.icon.png
@@ -734,8 +737,8 @@ pm80.fGalarian.icon.png
 pm80.fGalarian.s.icon.png
 pm80.fMega.icon.png
 pm80.fMega.s.icon.png
-pm80.cNew_Year's.icon.png
-pm80.cNew_Year's.s.icon.png
+pm80.fNew_Year's.icon.png
+pm80.fNew_Year's.s.icon.png
 
 //* Magnemite *//
 pm81.icon.png
@@ -772,16 +775,16 @@ pm88.icon.png
 pm88.s.icon.png
 pm88.fAlolan.icon.png
 pm88.fAlolan.s.icon.png
-pm88.cParty_Hat.icon.png
-pm88.cParty_Hat.s.icon.png
+pm88.fParty_Hat.icon.png
+pm88.fParty_Hat.s.icon.png
 
 //* Muk *//
 pm89.icon.png
 pm89.s.icon.png
 pm89.fAlolan.icon.png
 pm89.fAlolan.s.icon.png
-pm89.cParty_Hat.icon.png
-pm89.cParty_Hat.s.icon.png
+pm89.fParty_Hat.icon.png
+pm89.fParty_Hat.s.icon.png
 
 //* Shellder *//
 pm90.icon.png
@@ -806,14 +809,14 @@ pm94.fGigantamax.icon.png
 pm94.fGigantamax.s.icon.png
 pm94.fMega.icon.png
 pm94.fMega.s.icon.png
-pm94.cMega_Banette_Costume.icon.png
-pm94.cMega_Banette_Costume.s.icon.png
-pm94.cParty_Hat.icon.png
-pm94.cParty_Hat.s.icon.png
-pm94.cSpooky_Festival.icon.png
-pm94.cSpooky_Festival.s.icon.png
-pm94.cTrick_Or_Treat.icon.png
-pm94.cTrick_Or_Treat.s.icon.png
+pm94.fMega_Banette_Costume.icon.png
+pm94.fMega_Banette_Costume.s.icon.png
+pm94.fParty_Hat.icon.png
+pm94.fParty_Hat.s.icon.png
+pm94.fSpooky_Festival.icon.png
+pm94.fSpooky_Festival.s.icon.png
+pm94.fTrick_Or_Treat.icon.png
+pm94.fTrick_Or_Treat.s.icon.png
 
 //* Onix *//
 pm95.icon.png
@@ -862,16 +865,16 @@ pm103.fAlolan.s.icon.png
 //* Cubone *//
 pm104.icon.png
 pm104.s.icon.png
-pm104.cFlower_Crown.icon.png
-pm104.cFlower_Crown.s.icon.png
+pm104.fFlower_Crown.icon.png
+pm104.fFlower_Crown.s.icon.png
 
 //* Marowak *//
 pm105.icon.png
 pm105.s.icon.png
 pm105.fAlolan.icon.png
 pm105.fAlolan.s.icon.png
-pm105.cFlower_Crown.icon.png
-pm105.cFlower_Crown.s.icon.png
+pm105.fFlower_Crown.icon.png
+pm105.fFlower_Crown.s.icon.png
 
 //* Hitmonlee *//
 pm106.icon.png
@@ -906,8 +909,8 @@ pm112.s.icon.png
 //* Chansey *//
 pm113.icon.png
 pm113.s.icon.png
-pm113.cFlower_Crown.icon.png
-pm113.cFlower_Crown.s.icon.png
+pm113.fFlower_Crown.icon.png
+pm113.fFlower_Crown.s.icon.png
 
 //* Tangela *//
 pm114.icon.png
@@ -962,8 +965,8 @@ pm124.s.icon.png
 //* Electabuzz *//
 pm125.icon.png
 pm125.s.icon.png
-pm125.cSpark_Themed.icon.png
-pm125.cSpark_Themed.s.icon.png
+pm125.fSpark_Themed.icon.png
+pm125.fSpark_Themed.s.icon.png
 
 //* Magmar *//
 pm126.icon.png
@@ -998,74 +1001,74 @@ pm130.fMega.s.icon.png
 //* Lapras *//
 pm131.icon.png
 pm131.s.icon.png
-pm131.cBlanche_Themed.icon.png
-pm131.cBlanche_Themed.s.icon.png
+pm131.fBlanche_Themed.icon.png
+pm131.fBlanche_Themed.s.icon.png
 pm131.fGigantamax.icon.png
 pm131.fGigantamax.s.icon.png
-pm131.cScarf.icon.png
-pm131.cScarf.s.icon.png
+pm131.fScarf.icon.png
+pm131.fScarf.s.icon.png
 
 //* Ditto *//
 pm132.icon.png
 pm132.s.icon.png
-pm132.cPokopia_Cap.icon.png
-pm132.cPokopia_Cap.s.icon.png
-pm132.cPokopia_Hat.icon.png
-pm132.cPokopia_Hat.s.icon.png
+pm132.fPokopia_Cap.icon.png
+pm132.fPokopia_Cap.s.icon.png
+pm132.fPokopia_Hat.icon.png
+pm132.fPokopia_Hat.s.icon.png
 
 //* Eevee *//
 pm133.icon.png
 pm133.s.icon.png
-pm133.cCherry_Blossom.icon.png
-pm133.cCherry_Blossom.s.icon.png
-pm133.cExplorer_Hat.icon.png
-pm133.cExplorer_Hat.s.icon.png
-pm133.cFlower_Crown.icon.png
-pm133.cFlower_Crown.s.icon.png
-pm133.cChristmas_Hat.icon.png
-pm133.cChristmas_Hat.s.icon.png
-pm133.cMoon_Crown.icon.png
-pm133.cMoon_Crown.s.icon.png
-pm133.cParty_Hat.icon.png
-pm133.cParty_Hat.s.icon.png
-pm133.cSun_Crown.icon.png
-pm133.cSun_Crown.s.icon.png
+pm133.fCherry_Blossom.icon.png
+pm133.fCherry_Blossom.s.icon.png
+pm133.fExplorer_Hat.icon.png
+pm133.fExplorer_Hat.s.icon.png
+pm133.fFlower_Crown.icon.png
+pm133.fFlower_Crown.s.icon.png
+pm133.fChristmas_Hat.icon.png
+pm133.fChristmas_Hat.s.icon.png
+pm133.fMoon_Crown.icon.png
+pm133.fMoon_Crown.s.icon.png
+pm133.fParty_Hat.icon.png
+pm133.fParty_Hat.s.icon.png
+pm133.fSun_Crown.icon.png
+pm133.fSun_Crown.s.icon.png
 
 //* Vaporeon *//
 pm134.icon.png
 pm134.s.icon.png
-pm134.cCherry_Blossom.icon.png
-pm134.cCherry_Blossom.s.icon.png
-pm134.cExplorer_Hat.icon.png
-pm134.cExplorer_Hat.s.icon.png
-pm134.cFlower_Crown.icon.png
-pm134.cFlower_Crown.s.icon.png
-pm134.cChristmas_Hat.icon.png
-pm134.cChristmas_Hat.s.icon.png
+pm134.fCherry_Blossom.icon.png
+pm134.fCherry_Blossom.s.icon.png
+pm134.fExplorer_Hat.icon.png
+pm134.fExplorer_Hat.s.icon.png
+pm134.fFlower_Crown.icon.png
+pm134.fFlower_Crown.s.icon.png
+pm134.fChristmas_Hat.icon.png
+pm134.fChristmas_Hat.s.icon.png
 
 //* Jolteon *//
 pm135.icon.png
 pm135.s.icon.png
-pm135.cCherry_Blossom.icon.png
-pm135.cCherry_Blossom.s.icon.png
-pm135.cExplorer_Hat.icon.png
-pm135.cExplorer_Hat.s.icon.png
-pm135.cFlower_Crown.icon.png
-pm135.cFlower_Crown.s.icon.png
-pm135.cChristmas_Hat.icon.png
-pm135.cChristmas_Hat.s.icon.png
+pm135.fCherry_Blossom.icon.png
+pm135.fCherry_Blossom.s.icon.png
+pm135.fExplorer_Hat.icon.png
+pm135.fExplorer_Hat.s.icon.png
+pm135.fFlower_Crown.icon.png
+pm135.fFlower_Crown.s.icon.png
+pm135.fChristmas_Hat.icon.png
+pm135.fChristmas_Hat.s.icon.png
 
 //* Flareon *//
 pm136.icon.png
 pm136.s.icon.png
-pm136.cCherry_Blossom.icon.png
-pm136.cCherry_Blossom.s.icon.png
-pm136.cExplorer_Hat.icon.png
-pm136.cExplorer_Hat.s.icon.png
-pm136.cFlower_Crown.icon.png
-pm136.cFlower_Crown.s.icon.png
-pm136.cChristmas_Hat.icon.png
-pm136.cChristmas_Hat.s.icon.png
+pm136.fCherry_Blossom.icon.png
+pm136.fCherry_Blossom.s.icon.png
+pm136.fExplorer_Hat.icon.png
+pm136.fExplorer_Hat.s.icon.png
+pm136.fFlower_Crown.icon.png
+pm136.fFlower_Crown.s.icon.png
+pm136.fChristmas_Hat.icon.png
+pm136.fChristmas_Hat.s.icon.png
 
 //* Porygon *//
 pm137.icon.png
@@ -1092,20 +1095,20 @@ pm142.icon.png
 pm142.s.icon.png
 pm142.fMega.icon.png
 pm142.fMega.s.icon.png
-pm142.cSatchel.icon.png
-pm142.cSatchel.s.icon.png
+pm142.fSatchel.icon.png
+pm142.fSatchel.s.icon.png
 
 //* Snorlax *//
 pm143.icon.png
 pm143.s.icon.png
-pm143.cCowboy_Hat.icon.png
-pm143.cCowboy_Hat.s.icon.png
+pm143.fCowboy_Hat.icon.png
+pm143.fCowboy_Hat.s.icon.png
 pm143.fGigantamax.icon.png
 pm143.fGigantamax.s.icon.png
-pm143.cNightcap.icon.png
-pm143.cNightcap.s.icon.png
-pm143.cStudded_Jacket.icon.png
-pm143.cStudded_Jacket.s.icon.png
+pm143.fNightcap.icon.png
+pm143.fNightcap.s.icon.png
+pm143.fStudded_Jacket.icon.png
+pm143.fStudded_Jacket.s.icon.png
 
 //* Articuno *//
 pm144.icon.png
@@ -1136,17 +1139,15 @@ pm148.s.icon.png
 //* Dragonite *//
 pm149.icon.png
 pm149.s.icon.png
-pm149.cFashion.icon.png
-pm149.cFashion.s.icon.png
+pm149.fFashion.icon.png
+pm149.fFashion.s.icon.png
 pm149.fMega.icon.png
 pm149.fMega.s.icon.png
 
 //* Mewtwo *//
 pm150.icon.png
 pm150.s.icon.png
-pm150.cArmored.icon.png
-pm150.cPok_Mon_Go_Stadium.icon.png
-pm150.cPok_Mon_Go_Stadium.s.icon.png
+pm150.cArmored.png
 pm150.fMega_X.icon.png
 pm150.fMega_X.s.icon.png
 pm150.fMega_Y.icon.png
@@ -1205,14 +1206,14 @@ pm162.s.icon.png
 //* Hoothoot *//
 pm163.icon.png
 pm163.s.icon.png
-pm163.cNew_Year's.icon.png
-pm163.cNew_Year's.s.icon.png
+pm163.fNew_Year's.icon.png
+pm163.fNew_Year's.s.icon.png
 
 //* Noctowl *//
 pm164.icon.png
 pm164.s.icon.png
-pm164.cNew_Year's.icon.png
-pm164.cNew_Year's.s.icon.png
+pm164.fNew_Year's.icon.png
+pm164.fNew_Year's.s.icon.png
 
 //* Ledyba *//
 pm165.icon.png
@@ -1233,8 +1234,8 @@ pm168.s.icon.png
 //* Crobat *//
 pm169.icon.png
 pm169.s.icon.png
-pm169.cTop_Hat.icon.png
-pm169.cTop_Hat.s.icon.png
+pm169.fTop_Hat.icon.png
+pm169.fTop_Hat.s.icon.png
 
 //* Chinchou *//
 pm170.icon.png
@@ -1247,26 +1248,26 @@ pm171.s.icon.png
 //* Pichu *//
 pm172.icon.png
 pm172.s.icon.png
-pm172.c2018.icon.png
-pm172.c2018.s.icon.png
-pm172.cBeanie.icon.png
-pm172.cBeanie.s.icon.png
-pm172.cCherry_Blossom.icon.png
-pm172.cCherry_Blossom.s.icon.png
-pm172.cFlower_Crown.icon.png
-pm172.cFlower_Crown.s.icon.png
-pm172.cNew_Year's_Hat.icon.png
-pm172.cNew_Year's_Hat.s.icon.png
-pm172.cAsh_Cap.icon.png
-pm172.cAsh_Cap.s.icon.png
-pm172.cParty_Hat.icon.png
-pm172.cParty_Hat.s.icon.png
-pm172.cSanta_Hat.icon.png
-pm172.cSanta_Hat.s.icon.png
-pm172.cSummer_Hat.icon.png
-pm172.cSummer_Hat.s.icon.png
-pm172.cWitch_Hat.icon.png
-pm172.cWitch_Hat.s.icon.png
+pm172.f2018.icon.png
+pm172.f2018.s.icon.png
+pm172.fBeanie.icon.png
+pm172.fBeanie.s.icon.png
+pm172.fCherry_Blossom.icon.png
+pm172.fCherry_Blossom.s.icon.png
+pm172.fFlower_Crown.icon.png
+pm172.fFlower_Crown.s.icon.png
+pm172.fNew_Year's_Hat.icon.png
+pm172.fNew_Year's_Hat.s.icon.png
+pm172.fAsh_Cap.icon.png
+pm172.fAsh_Cap.s.icon.png
+pm172.fParty_Hat.icon.png
+pm172.fParty_Hat.s.icon.png
+pm172.fSanta_Hat.icon.png
+pm172.fSanta_Hat.s.icon.png
+pm172.fSummer_Hat.icon.png
+pm172.fSummer_Hat.s.icon.png
+pm172.fWitch_Hat.icon.png
+pm172.fWitch_Hat.s.icon.png
 
 //* Cleffa *//
 pm173.icon.png
@@ -1279,14 +1280,14 @@ pm174.s.icon.png
 //* Togepi *//
 pm175.icon.png
 pm175.s.icon.png
-pm175.cFlower_Crown.icon.png
-pm175.cFlower_Crown.s.icon.png
+pm175.fFlower_Crown.icon.png
+pm175.fFlower_Crown.s.icon.png
 
 //* Togetic *//
 pm176.icon.png
 pm176.s.icon.png
-pm176.cFlower_Crown.icon.png
-pm176.cFlower_Crown.s.icon.png
+pm176.fFlower_Crown.icon.png
+pm176.fFlower_Crown.s.icon.png
 
 //* Natu *//
 pm177.icon.png
@@ -1325,8 +1326,8 @@ pm184.s.icon.png
 //* Sudowoodo *//
 pm185.icon.png
 pm185.s.icon.png
-pm185.cChristmas.icon.png
-pm185.cChristmas.s.icon.png
+pm185.fChristmas.icon.png
+pm185.fChristmas.s.icon.png
 
 //* Politoed *//
 pm186.icon.png
@@ -1363,44 +1364,44 @@ pm193.s.icon.png
 //* Wooper *//
 pm194.icon.png
 pm194.s.icon.png
-pm194.cFashion.icon.png
-pm194.cFashion.s.icon.png
+pm194.fFashion.icon.png
+pm194.fFashion.s.icon.png
 pm194.fPaldean.icon.png
 pm194.fPaldean.s.icon.png
 
 //* Quagsire *//
 pm195.icon.png
 pm195.s.icon.png
-pm195.cFashion.icon.png
-pm195.cFashion.s.icon.png
+pm195.fFashion.icon.png
+pm195.fFashion.s.icon.png
 
 //* Espeon *//
 pm196.icon.png
 pm196.s.icon.png
-pm196.cCherry_Blossom.icon.png
-pm196.cCherry_Blossom.s.icon.png
-pm196.cDay_Scarf.icon.png
-pm196.cDay_Scarf.s.icon.png
-pm196.cExplorer_Hat.icon.png
-pm196.cExplorer_Hat.s.icon.png
-pm196.cFlower_Crown.icon.png
-pm196.cFlower_Crown.s.icon.png
-pm196.cChristmas_Hat.icon.png
-pm196.cChristmas_Hat.s.icon.png
+pm196.fCherry_Blossom.icon.png
+pm196.fCherry_Blossom.s.icon.png
+pm196.fDay_Scarf.icon.png
+pm196.fDay_Scarf.s.icon.png
+pm196.fExplorer_Hat.icon.png
+pm196.fExplorer_Hat.s.icon.png
+pm196.fFlower_Crown.icon.png
+pm196.fFlower_Crown.s.icon.png
+pm196.fChristmas_Hat.icon.png
+pm196.fChristmas_Hat.s.icon.png
 
 //* Umbreon *//
 pm197.icon.png
 pm197.s.icon.png
-pm197.cCherry_Blossom.icon.png
-pm197.cCherry_Blossom.s.icon.png
-pm197.cExplorer_Hat.icon.png
-pm197.cExplorer_Hat.s.icon.png
-pm197.cFlower_Crown.icon.png
-pm197.cFlower_Crown.s.icon.png
-pm197.cChristmas_Hat.icon.png
-pm197.cChristmas_Hat.s.icon.png
-pm197.cNight_Scarf.icon.png
-pm197.cNight_Scarf.s.icon.png
+pm197.fCherry_Blossom.icon.png
+pm197.fCherry_Blossom.s.icon.png
+pm197.fExplorer_Hat.icon.png
+pm197.fExplorer_Hat.s.icon.png
+pm197.fFlower_Crown.icon.png
+pm197.fFlower_Crown.s.icon.png
+pm197.fChristmas_Hat.icon.png
+pm197.fChristmas_Hat.s.icon.png
+pm197.fNight_Scarf.icon.png
+pm197.fNight_Scarf.s.icon.png
 
 //* Murkrow *//
 pm198.icon.png
@@ -1411,8 +1412,8 @@ pm199.icon.png
 pm199.s.icon.png
 pm199.fGalarian.icon.png
 pm199.fGalarian.s.icon.png
-pm199.cNew_Year's.icon.png
-pm199.cNew_Year's.s.icon.png
+pm199.fNew_Year's.icon.png
+pm199.fNew_Year's.s.icon.png
 
 //* Misdreavus *//
 pm200.icon.png
@@ -1479,8 +1480,8 @@ pm201.fZ.s.icon.png
 //* Wobbuffet *//
 pm202.icon.png
 pm202.s.icon.png
-pm202.cParty_Hat.icon.png
-pm202.cParty_Hat.s.icon.png
+pm202.fParty_Hat.icon.png
+pm202.fParty_Hat.s.icon.png
 
 //* Girafarig *//
 pm203.icon.png
@@ -1541,22 +1542,22 @@ pm214.fMega.s.icon.png
 //* Sneasel *//
 pm215.icon.png
 pm215.s.icon.png
-pm215.cFashion.icon.png
-pm215.cFashion.s.icon.png
+pm215.fFashion.icon.png
+pm215.fFashion.s.icon.png
 pm215.fHisuian.icon.png
 pm215.fHisuian.s.icon.png
 
 //* Teddiursa *//
 pm216.icon.png
 pm216.s.icon.png
-pm216.cWitch_Hat.icon.png
-pm216.cWitch_Hat.s.icon.png
+pm216.fWitch_Hat.icon.png
+pm216.fWitch_Hat.s.icon.png
 
 //* Ursaring *//
 pm217.icon.png
 pm217.s.icon.png
-pm217.cWitch_Hat.icon.png
-pm217.cWitch_Hat.s.icon.png
+pm217.fWitch_Hat.icon.png
+pm217.fWitch_Hat.s.icon.png
 
 //* Slugma *//
 pm218.icon.png
@@ -1579,8 +1580,8 @@ pm222.icon.png
 pm222.s.icon.png
 pm222.fGalarian.icon.png
 pm222.fGalarian.s.icon.png
-pm222.cPink_Sunglasses_Galarian.icon.png
-pm222.cPink_Sunglasses_Galarian.s.icon.png
+pm222.fPink_Sunglasses_Galarian.icon.png
+pm222.fPink_Sunglasses_Galarian.s.icon.png
 
 //* Remoraid *//
 pm223.icon.png
@@ -1593,8 +1594,8 @@ pm224.s.icon.png
 //* Delibird *//
 pm225.icon.png
 pm225.s.icon.png
-pm225.cChristmas_Ribbon.icon.png
-pm225.cChristmas_Ribbon.s.icon.png
+pm225.fChristmas_Ribbon.icon.png
+pm225.fChristmas_Ribbon.s.icon.png
 
 //* Mantine *//
 pm226.icon.png
@@ -1635,8 +1636,8 @@ pm233.s.icon.png
 //* Stantler *//
 pm234.icon.png
 pm234.s.icon.png
-pm234.cChristmas_Bells.icon.png
-pm234.cChristmas_Bells.s.icon.png
+pm234.fChristmas_Bells.icon.png
+pm234.fChristmas_Bells.s.icon.png
 
 //* Smeargle *//
 pm235.icon.png
@@ -1653,14 +1654,14 @@ pm237.s.icon.png
 //* Smoochum *//
 pm238.icon.png
 pm238.s.icon.png
-pm238.cFashion.icon.png
-pm238.cFashion.s.icon.png
+pm238.fFashion.icon.png
+pm238.fFashion.s.icon.png
 
 //* Elekid *//
 pm239.icon.png
 pm239.s.icon.png
-pm239.cSpark_Themed.icon.png
-pm239.cSpark_Themed.s.icon.png
+pm239.fSpark_Themed.icon.png
+pm239.fSpark_Themed.s.icon.png
 
 //* Magby *//
 pm240.icon.png
@@ -1673,8 +1674,8 @@ pm241.s.icon.png
 //* Blissey *//
 pm242.icon.png
 pm242.s.icon.png
-pm242.cFlower_Crown.icon.png
-pm242.cFlower_Crown.s.icon.png
+pm242.fFlower_Crown.icon.png
+pm242.fFlower_Crown.s.icon.png
 
 //* Raikou *//
 pm243.icon.png
@@ -1706,8 +1707,8 @@ pm248.fMega.s.icon.png
 pm249.icon.png
 pm249.s.icon.png
 pm249.fApex.icon.png
-pm249.cGo_Fest_2017.icon.png
-pm249.cGo_Fest_2017.s.icon.png
+pm249.fGo_Fest_2017.icon.png
+pm249.fGo_Fest_2017.s.icon.png
 
 //* Ho-Oh *//
 pm250.icon.png
@@ -1773,8 +1774,8 @@ pm263.icon.png
 pm263.s.icon.png
 pm263.fGalarian.icon.png
 pm263.fGalarian.s.icon.png
-pm263.cMeloetta_Hat_Galarian.icon.png
-pm263.cMeloetta_Hat_Galarian.s.icon.png
+pm263.fMeloetta_Hat_Galarian.icon.png
+pm263.fMeloetta_Hat_Galarian.s.icon.png
 
 //* Linoone *//
 pm264.icon.png
@@ -1785,8 +1786,8 @@ pm264.fGalarian.s.icon.png
 //* Wurmple *//
 pm265.icon.png
 pm265.s.icon.png
-pm265.cParty_Hat.icon.png
-pm265.cParty_Hat.s.icon.png
+pm265.fParty_Hat.icon.png
+pm265.fParty_Hat.s.icon.png
 
 //* Silcoon *//
 pm266.icon.png
@@ -1851,16 +1852,16 @@ pm280.s.icon.png
 //* Kirlia *//
 pm281.icon.png
 pm281.s.icon.png
-pm281.cFashion.icon.png
-pm281.cFashion.s.icon.png
+pm281.fFashion.icon.png
+pm281.fFashion.s.icon.png
 
 //* Gardevoir *//
 pm282.icon.png
 pm282.s.icon.png
 pm282.fMega.icon.png
 pm282.fMega.s.icon.png
-pm282.cMeloetta_Hat.icon.png
-pm282.cMeloetta_Hat.s.icon.png
+pm282.fMeloetta_Hat.icon.png
+pm282.fMeloetta_Hat.s.icon.png
 
 //* Surskit *//
 pm283.icon.png
@@ -1881,20 +1882,20 @@ pm286.s.icon.png
 //* Slakoth *//
 pm287.icon.png
 pm287.s.icon.png
-pm287.cSummer_Visor.icon.png
-pm287.cSummer_Visor.s.icon.png
+pm287.fSummer_Visor.icon.png
+pm287.fSummer_Visor.s.icon.png
 
 //* Vigoroth *//
 pm288.icon.png
 pm288.s.icon.png
-pm288.cSummer_Visor.icon.png
-pm288.cSummer_Visor.s.icon.png
+pm288.fSummer_Visor.icon.png
+pm288.fSummer_Visor.s.icon.png
 
 //* Slaking *//
 pm289.icon.png
 pm289.s.icon.png
-pm289.cSummer_Visor.icon.png
-pm289.cSummer_Visor.s.icon.png
+pm289.fSummer_Visor.icon.png
+pm289.fSummer_Visor.s.icon.png
 
 //* Nincada *//
 pm290.icon.png
@@ -1947,8 +1948,8 @@ pm301.s.icon.png
 //* Sableye *//
 pm302.icon.png
 pm302.s.icon.png
-pm302.cLitwick_Costume.icon.png
-pm302.cLitwick_Costume.s.icon.png
+pm302.fLitwick_Costume.icon.png
+pm302.fLitwick_Costume.s.icon.png
 pm302.fMega.icon.png
 pm302.fMega.s.icon.png
 
@@ -2091,8 +2092,8 @@ pm329.s.icon.png
 //* Flygon *//
 pm330.icon.png
 pm330.s.icon.png
-pm330.cMeloetta_Hat.icon.png
-pm330.cMeloetta_Hat.s.icon.png
+pm330.fMeloetta_Hat.icon.png
+pm330.fMeloetta_Hat.s.icon.png
 
 //* Cacnea *//
 pm331.icon.png
@@ -2203,14 +2204,14 @@ pm354.fMega.s.icon.png
 //* Duskull *//
 pm355.icon.png
 pm355.s.icon.png
-pm355.cFlower_Crown.icon.png
-pm355.cFlower_Crown.s.icon.png
+pm355.fFlower_Crown.icon.png
+pm355.fFlower_Crown.s.icon.png
 
 //* Dusclops *//
 pm356.icon.png
 pm356.s.icon.png
-pm356.cFlower_Crown.icon.png
-pm356.cFlower_Crown.s.icon.png
+pm356.fFlower_Crown.icon.png
+pm356.fFlower_Crown.s.icon.png
 
 //* Tropius *//
 pm357.icon.png
@@ -2223,8 +2224,8 @@ pm358.s.icon.png
 //* Absol *//
 pm359.icon.png
 pm359.s.icon.png
-pm359.cFashion.icon.png
-pm359.cFashion.s.icon.png
+pm359.fFashion.icon.png
+pm359.fFashion.s.icon.png
 pm359.fMega.icon.png
 pm359.fMega.s.icon.png
 
@@ -2245,8 +2246,8 @@ pm362.fMega.s.icon.png
 //* Spheal *//
 pm363.icon.png
 pm363.s.icon.png
-pm363.cChristmas.icon.png
-pm363.cChristmas.s.icon.png
+pm363.fChristmas.icon.png
+pm363.fChristmas.s.icon.png
 
 //* Sealeo *//
 pm364.icon.png
@@ -2363,10 +2364,10 @@ pm386.fSpeed.s.icon.png
 //* Turtwig *//
 pm387.icon.png
 pm387.s.icon.png
-pm387.cDawn's_Hat.icon.png
-pm387.cDawn's_Hat.s.icon.png
-pm387.cLucas's_Hat.icon.png
-pm387.cLucas's_Hat.s.icon.png
+pm387.fDawn's_Hat.icon.png
+pm387.fDawn's_Hat.s.icon.png
+pm387.fLucas's_Hat.icon.png
+pm387.fLucas's_Hat.s.icon.png
 
 //* Grotle *//
 pm388.icon.png
@@ -2379,10 +2380,10 @@ pm389.s.icon.png
 //* Chimchar *//
 pm390.icon.png
 pm390.s.icon.png
-pm390.cDawn's_Hat.icon.png
-pm390.cDawn's_Hat.s.icon.png
-pm390.cLucas's_Hat.icon.png
-pm390.cLucas's_Hat.s.icon.png
+pm390.fDawn's_Hat.icon.png
+pm390.fDawn's_Hat.s.icon.png
+pm390.fLucas's_Hat.icon.png
+pm390.fLucas's_Hat.s.icon.png
 
 //* Monferno *//
 pm391.icon.png
@@ -2395,12 +2396,12 @@ pm392.s.icon.png
 //* Piplup *//
 pm393.icon.png
 pm393.s.icon.png
-pm393.cDawn's_Hat.icon.png
-pm393.cDawn's_Hat.s.icon.png
-pm393.cHalloween_Hat.icon.png
-pm393.cHalloween_Hat.s.icon.png
-pm393.cLucas's_Hat.icon.png
-pm393.cLucas's_Hat.s.icon.png
+pm393.fDawn's_Hat.icon.png
+pm393.fDawn's_Hat.s.icon.png
+pm393.fHalloween_Hat.icon.png
+pm393.fHalloween_Hat.s.icon.png
+pm393.fLucas's_Hat.icon.png
+pm393.fLucas's_Hat.s.icon.png
 
 //* Prinplup *//
 pm394.icon.png
@@ -2443,8 +2444,8 @@ pm402.s.icon.png
 //* Shinx *//
 pm403.icon.png
 pm403.s.icon.png
-pm403.cFashion.icon.png
-pm403.cFashion.s.icon.png
+pm403.fFashion.icon.png
+pm403.fFashion.s.icon.png
 
 //* Luxio *//
 pm404.icon.png
@@ -2551,20 +2552,20 @@ pm425.s.icon.png
 //* Drifblim *//
 pm426.icon.png
 pm426.s.icon.png
-pm426.cHalloween_Hat.icon.png
-pm426.cHalloween_Hat.s.icon.png
+pm426.fHalloween_Hat.icon.png
+pm426.fHalloween_Hat.s.icon.png
 
 //* Buneary *//
 pm427.icon.png
 pm427.s.icon.png
-pm427.cFlower_Crown.icon.png
-pm427.cFlower_Crown.s.icon.png
+pm427.fFlower_Crown.icon.png
+pm427.fFlower_Crown.s.icon.png
 
 //* Lopunny *//
 pm428.icon.png
 pm428.s.icon.png
-pm428.cFlower_Crown.icon.png
-pm428.cFlower_Crown.s.icon.png
+pm428.fFlower_Crown.icon.png
+pm428.fFlower_Crown.s.icon.png
 pm428.fMega.icon.png
 pm428.fMega.s.icon.png
 
@@ -2615,8 +2616,8 @@ pm439.s.icon.png
 //* Happiny *//
 pm440.icon.png
 pm440.s.icon.png
-pm440.cFlower_Crown.icon.png
-pm440.cFlower_Crown.s.icon.png
+pm440.fFlower_Crown.icon.png
+pm440.fFlower_Crown.s.icon.png
 
 //* Chatot *//
 pm441.icon.png
@@ -2673,14 +2674,14 @@ pm452.s.icon.png
 //* Croagunk *//
 pm453.icon.png
 pm453.s.icon.png
-pm453.cFashion.icon.png
-pm453.cFashion.s.icon.png
+pm453.fFashion.icon.png
+pm453.fFashion.s.icon.png
 
 //* Toxicroak *//
 pm454.icon.png
 pm454.s.icon.png
-pm454.cFashion.icon.png
-pm454.cFashion.s.icon.png
+pm454.fFashion.icon.png
+pm454.fFashion.s.icon.png
 
 //* Carnivine *//
 pm455.icon.png
@@ -2731,8 +2732,8 @@ pm465.s.icon.png
 //* Electivire *//
 pm466.icon.png
 pm466.s.icon.png
-pm466.cSpark_Themed.icon.png
-pm466.cSpark_Themed.s.icon.png
+pm466.fSpark_Themed.icon.png
+pm466.fSpark_Themed.s.icon.png
 
 //* Magmortar *//
 pm467.icon.png
@@ -2741,8 +2742,8 @@ pm467.s.icon.png
 //* Togekiss *//
 pm468.icon.png
 pm468.s.icon.png
-pm468.cFlower_Crown.icon.png
-pm468.cFlower_Crown.s.icon.png
+pm468.fFlower_Crown.icon.png
+pm468.fFlower_Crown.s.icon.png
 
 //* Yanmega *//
 pm469.icon.png
@@ -2751,28 +2752,28 @@ pm469.s.icon.png
 //* Leafeon *//
 pm470.icon.png
 pm470.s.icon.png
-pm470.cCherry_Blossom.icon.png
-pm470.cCherry_Blossom.s.icon.png
-pm470.cExplorer_Hat.icon.png
-pm470.cExplorer_Hat.s.icon.png
-pm470.cFlower_Crown.icon.png
-pm470.cFlower_Crown.s.icon.png
-pm470.cChristmas_Hat.icon.png
-pm470.cChristmas_Hat.s.icon.png
+pm470.fCherry_Blossom.icon.png
+pm470.fCherry_Blossom.s.icon.png
+pm470.fExplorer_Hat.icon.png
+pm470.fExplorer_Hat.s.icon.png
+pm470.fFlower_Crown.icon.png
+pm470.fFlower_Crown.s.icon.png
+pm470.fChristmas_Hat.icon.png
+pm470.fChristmas_Hat.s.icon.png
 
 //* Glaceon *//
 pm471.icon.png
 pm471.s.icon.png
-pm471.cCherry_Blossom.icon.png
-pm471.cCherry_Blossom.s.icon.png
-pm471.cExplorer_Hat.icon.png
-pm471.cExplorer_Hat.s.icon.png
-pm471.cFlower_Crown.icon.png
-pm471.cFlower_Crown.s.icon.png
-pm471.cChristmas_Hat.icon.png
-pm471.cChristmas_Hat.s.icon.png
-pm471.cUndersea_Holiday.icon.png
-pm471.cUndersea_Holiday.s.icon.png
+pm471.fCherry_Blossom.icon.png
+pm471.fCherry_Blossom.s.icon.png
+pm471.fExplorer_Hat.icon.png
+pm471.fExplorer_Hat.s.icon.png
+pm471.fFlower_Crown.icon.png
+pm471.fFlower_Crown.s.icon.png
+pm471.fChristmas_Hat.icon.png
+pm471.fChristmas_Hat.s.icon.png
+pm471.fUndersea_Holiday.icon.png
+pm471.fUndersea_Holiday.s.icon.png
 
 //* Gliscor *//
 pm472.icon.png
@@ -2799,8 +2800,8 @@ pm476.s.icon.png
 //* Dusknoir *//
 pm477.icon.png
 pm477.s.icon.png
-pm477.cFlower_Crown.icon.png
-pm477.cFlower_Crown.s.icon.png
+pm477.fFlower_Crown.icon.png
+pm477.fFlower_Crown.s.icon.png
 
 //* Froslass *//
 pm478.icon.png
@@ -2989,8 +2990,8 @@ pm521.s.icon.png
 //* Blitzle *//
 pm522.icon.png
 pm522.s.icon.png
-pm522.cFashion.icon.png
-pm522.cFashion.s.icon.png
+pm522.fFashion.icon.png
+pm522.fFashion.s.icon.png
 
 //* Zebstrika *//
 pm523.icon.png
@@ -3089,14 +3090,14 @@ pm545.s.icon.png
 //* Cottonee *//
 pm546.icon.png
 pm546.s.icon.png
-pm546.cFlower_Crown.icon.png
-pm546.cFlower_Crown.s.icon.png
+pm546.fFlower_Crown.icon.png
+pm546.fFlower_Crown.s.icon.png
 
 //* Whimsicott *//
 pm547.icon.png
 pm547.s.icon.png
-pm547.cFlower_Crown.icon.png
-pm547.cFlower_Crown.s.icon.png
+pm547.fFlower_Crown.icon.png
+pm547.fFlower_Crown.s.icon.png
 
 //* Petilil *//
 pm548.icon.png
@@ -3215,14 +3216,14 @@ pm571.fHisuian.s.icon.png
 //* Minccino *//
 pm572.icon.png
 pm572.s.icon.png
-pm572.cFashion.icon.png
-pm572.cFashion.s.icon.png
+pm572.fFashion.icon.png
+pm572.fFashion.s.icon.png
 
 //* Cinccino *//
 pm573.icon.png
 pm573.s.icon.png
-pm573.cFashion.icon.png
-pm573.cFashion.s.icon.png
+pm573.fFashion.icon.png
+pm573.fFashion.s.icon.png
 
 //* Gothita *//
 pm574.icon.png
@@ -3397,14 +3398,14 @@ pm612.s.icon.png
 //* Cubchoo *//
 pm613.icon.png
 pm613.s.icon.png
-pm613.cChristmas_Ribbon.icon.png
-pm613.cChristmas_Ribbon.s.icon.png
+pm613.fChristmas_Ribbon.icon.png
+pm613.fChristmas_Ribbon.s.icon.png
 
 //* Beartic *//
 pm614.icon.png
 pm614.s.icon.png
-pm614.cChristmas_Ribbon.icon.png
-pm614.cChristmas_Ribbon.s.icon.png
+pm614.fChristmas_Ribbon.icon.png
+pm614.fChristmas_Ribbon.s.icon.png
 
 //* Cryogonal *//
 pm615.icon.png
@@ -3601,22 +3602,22 @@ pm655.fMega.s.icon.png
 //* Froakie *//
 pm656.icon.png
 pm656.s.icon.png
-pm656.cWitch_Hat.icon.png
-pm656.cWitch_Hat.s.icon.png
+pm656.fWitch_Hat.icon.png
+pm656.fWitch_Hat.s.icon.png
 
 //* Frogadier *//
 pm657.icon.png
 pm657.s.icon.png
-pm657.cWitch_Hat.icon.png
-pm657.cWitch_Hat.s.icon.png
+pm657.fWitch_Hat.icon.png
+pm657.fWitch_Hat.s.icon.png
 
 //* Greninja *//
 pm658.icon.png
 pm658.s.icon.png
 pm658.fMega.icon.png
 pm658.fMega.s.icon.png
-pm658.cWitch_Hat.icon.png
-pm658.cWitch_Hat.s.icon.png
+pm658.fWitch_Hat.icon.png
+pm658.fWitch_Hat.s.icon.png
 
 //* Bunnelby *//
 pm659.icon.png
@@ -3867,14 +3868,14 @@ pm699.s.icon.png
 //* Sylveon *//
 pm700.icon.png
 pm700.s.icon.png
-pm700.cCherry_Blossom.icon.png
-pm700.cCherry_Blossom.s.icon.png
-pm700.cExplorer_Hat.icon.png
-pm700.cExplorer_Hat.s.icon.png
-pm700.cFlower_Crown.icon.png
-pm700.cFlower_Crown.s.icon.png
-pm700.cChristmas_Hat.icon.png
-pm700.cChristmas_Hat.s.icon.png
+pm700.fCherry_Blossom.icon.png
+pm700.fCherry_Blossom.s.icon.png
+pm700.fExplorer_Hat.icon.png
+pm700.fExplorer_Hat.s.icon.png
+pm700.fFlower_Crown.icon.png
+pm700.fFlower_Crown.s.icon.png
+pm700.fChristmas_Hat.icon.png
+pm700.fChristmas_Hat.s.icon.png
 
 //* Hawlucha *//
 pm701.icon.png
@@ -3883,8 +3884,8 @@ pm701.s.icon.png
 //* Dedenne *//
 pm702.icon.png
 pm702.s.icon.png
-pm702.cChristmas.icon.png
-pm702.cChristmas.s.icon.png
+pm702.fChristmas.icon.png
+pm702.fChristmas.s.icon.png
 
 //* Carbink *//
 pm703.icon.png
@@ -3923,14 +3924,14 @@ pm710.icon.png
 pm710.s.icon.png
 pm710.fAverage.icon.png
 pm710.fAverage.s.icon.png
-pm710.cHalloween_Average.icon.png
-pm710.cHalloween_Average.s.icon.png
-pm710.cHalloween_Large.icon.png
-pm710.cHalloween_Large.s.icon.png
-pm710.cHalloween_Small.icon.png
-pm710.cHalloween_Small.s.icon.png
-pm710.cHalloween_Super.icon.png
-pm710.cHalloween_Super.s.icon.png
+pm710.fHalloween_Average.icon.png
+pm710.fHalloween_Average.s.icon.png
+pm710.fHalloween_Large.icon.png
+pm710.fHalloween_Large.s.icon.png
+pm710.fHalloween_Small.icon.png
+pm710.fHalloween_Small.s.icon.png
+pm710.fHalloween_Super.icon.png
+pm710.fHalloween_Super.s.icon.png
 pm710.fLarge.icon.png
 pm710.fLarge.s.icon.png
 pm710.fSmall.icon.png
@@ -3943,14 +3944,14 @@ pm711.icon.png
 pm711.s.icon.png
 pm711.fAverage.icon.png
 pm711.fAverage.s.icon.png
-pm711.cHalloween_Average.icon.png
-pm711.cHalloween_Average.s.icon.png
-pm711.cHalloween_Large.icon.png
-pm711.cHalloween_Large.s.icon.png
-pm711.cHalloween_Small.icon.png
-pm711.cHalloween_Small.s.icon.png
-pm711.cHalloween_Super.icon.png
-pm711.cHalloween_Super.s.icon.png
+pm711.fHalloween_Average.icon.png
+pm711.fHalloween_Average.s.icon.png
+pm711.fHalloween_Large.icon.png
+pm711.fHalloween_Large.s.icon.png
+pm711.fHalloween_Small.icon.png
+pm711.fHalloween_Small.s.icon.png
+pm711.fHalloween_Super.icon.png
+pm711.fHalloween_Super.s.icon.png
 pm711.fLarge.icon.png
 pm711.fLarge.s.icon.png
 pm711.fSmall.icon.png
@@ -3971,14 +3972,14 @@ pm713.fHisuian.s.icon.png
 //* Noibat *//
 pm714.icon.png
 pm714.s.icon.png
-pm714.cHeadband.icon.png
-pm714.cHeadband.s.icon.png
+pm714.fHeadband.icon.png
+pm714.fHeadband.s.icon.png
 
 //* Noivern *//
 pm715.icon.png
 pm715.s.icon.png
-pm715.cHeadband.icon.png
-pm715.cHeadband.s.icon.png
+pm715.fHeadband.icon.png
+pm715.fHeadband.s.icon.png
 
 //* Xerneas *//
 pm716.icon.png
@@ -4015,20 +4016,20 @@ pm721.s.icon.png
 //* Rowlet *//
 pm722.icon.png
 pm722.s.icon.png
-pm722.cHalloween.icon.png
-pm722.cHalloween.s.icon.png
+pm722.fHalloween.icon.png
+pm722.fHalloween.s.icon.png
 
 //* Dartrix *//
 pm723.icon.png
 pm723.s.icon.png
-pm723.cHalloween.icon.png
-pm723.cHalloween.s.icon.png
+pm723.fHalloween.icon.png
+pm723.fHalloween.s.icon.png
 
 //* Decidueye *//
 pm724.icon.png
 pm724.s.icon.png
-pm724.cHalloween.icon.png
-pm724.cHalloween.s.icon.png
+pm724.fHalloween.icon.png
+pm724.fHalloween.s.icon.png
 pm724.fHisuian.icon.png
 pm724.fHisuian.s.icon.png
 
@@ -4083,14 +4084,14 @@ pm736.s.icon.png
 //* Charjabug *//
 pm737.icon.png
 pm737.s.icon.png
-pm737.cChristmas_Bow.icon.png
-pm737.cChristmas_Bow.s.icon.png
+pm737.fChristmas_Bow.icon.png
+pm737.fChristmas_Bow.s.icon.png
 
 //* Vikavolt *//
 pm738.icon.png
 pm738.s.icon.png
-pm738.cChristmas_Bow.icon.png
-pm738.cChristmas_Bow.s.icon.png
+pm738.fChristmas_Bow.icon.png
+pm738.fChristmas_Bow.s.icon.png
 
 //* Crabrawler *//
 pm739.icon.png
@@ -4187,8 +4188,8 @@ pm759.s.icon.png
 //* Bewear *//
 pm760.icon.png
 pm760.s.icon.png
-pm760.cWilderness_Cape.icon.png
-pm760.cWilderness_Cape.s.icon.png
+pm760.fWilderness_Cape.icon.png
+pm760.fWilderness_Cape.s.icon.png
 
 //* Bounsweet *//
 pm761.icon.png
@@ -4479,14 +4480,14 @@ pm830.s.icon.png
 //* Wooloo *//
 pm831.icon.png
 pm831.s.icon.png
-pm831.cChristmas.icon.png
-pm831.cChristmas.s.icon.png
+pm831.fChristmas.icon.png
+pm831.fChristmas.s.icon.png
 
 //* Dubwool *//
 pm832.icon.png
 pm832.s.icon.png
-pm832.cChristmas.icon.png
-pm832.cChristmas.s.icon.png
+pm832.fChristmas.icon.png
+pm832.fChristmas.s.icon.png
 
 //* Yamper *//
 pm835.icon.png
@@ -4573,18 +4574,18 @@ pm854.icon.png
 pm854.s.icon.png
 pm854.fAntique.icon.png
 pm854.fAntique.s.icon.png
-pm854.cHalloween_2026_Antique.icon.png
-pm854.cHalloween_2026_Antique.s.icon.png
-pm854.cHalloween_2026_Phony.icon.png
-pm854.cHalloween_2026_Phony.s.icon.png
+pm854.fHalloween_2026_Antique.icon.png
+pm854.fHalloween_2026_Antique.s.icon.png
+pm854.fHalloween_2026_Phony.icon.png
+pm854.fHalloween_2026_Phony.s.icon.png
 
 //* Polteageist *//
 pm855.fAntique.icon.png
 pm855.fAntique.s.icon.png
-pm855.cHalloween_2026_Antique.icon.png
-pm855.cHalloween_2026_Antique.s.icon.png
-pm855.cHalloween_2026_Phony.icon.png
-pm855.cHalloween_2026_Phony.s.icon.png
+pm855.fHalloween_2026_Antique.icon.png
+pm855.fHalloween_2026_Antique.s.icon.png
+pm855.fHalloween_2026_Phony.icon.png
+pm855.fHalloween_2026_Phony.s.icon.png
 pm855.fPhony.icon.png
 pm855.fPhony.s.icon.png
 
@@ -4643,8 +4644,8 @@ pm870.icon.png
 pm870.s.icon.png
 pm870.fMega.icon.png
 pm870.fMega.s.icon.png
-pm870.cTrain.icon.png
-pm870.cTrain.s.icon.png
+pm870.fTrain.icon.png
+pm870.fTrain.s.icon.png
 
 //* Snom *//
 pm872.icon.png
@@ -4737,8 +4738,8 @@ pm900.s.icon.png
 //* Ursaluna *//
 pm901.icon.png
 pm901.s.icon.png
-pm901.cWitch_Hat.icon.png
-pm901.cWitch_Hat.s.icon.png
+pm901.fWitch_Hat.icon.png
+pm901.fWitch_Hat.s.icon.png
 
 //* Sneasler *//
 pm903.icon.png
@@ -4761,8 +4762,8 @@ pm906.s.icon.png
 //* Floragato *//
 pm907.icon.png
 pm907.s.icon.png
-pm907.cHorizons.icon.png
-pm907.cHorizons.s.icon.png
+pm907.fHorizons.icon.png
+pm907.fHorizons.s.icon.png
 
 //* Meowscarada *//
 pm908.icon.png
@@ -5063,10 +5064,10 @@ pm998.s.icon.png
 //* Gimmighoul *//
 pm999.icon.png
 pm999.s.icon.png
-pm999.c10th_Anniversary_Coin.icon.png
-pm999.c10th_Anniversary_Coin.s.icon.png
-pm999.c9th_Anniversary_Coin.icon.png
-pm999.c9th_Anniversary_Coin.s.icon.png
+pm999.f10th_Anniversary_Coin.icon.png
+pm999.f10th_Anniversary_Coin.s.icon.png
+pm999.f9th_Anniversary_Coin.icon.png
+pm999.f9th_Anniversary_Coin.s.icon.png
 
 //* Gholdengo *//
 pm1000.icon.png
